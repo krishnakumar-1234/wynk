@@ -2,12 +2,12 @@ console.log("Hello world");
 
 
 // This is  one song of js and ------------------
-const player= document.getElementById('player');
+const player = document.getElementById('player');
 const playcircle = document.getElementById('playcircle');
-let audio1 = new Audio ('dukan images/Unstoppable Sia 128 Kbps.mp3')
+let audio1 = new Audio('Unstoppable Sia 128 Kbps.mp3')
 
 player.addEventListener('click', () => {
-    if(audio1.paused || audio1.currentTime<=0) {
+    if (audio1.paused || audio1.currentTime <= 0) {
         audio1.play();
         player.classList.add('pauser');
         console.log("This is one audio");
@@ -24,7 +24,7 @@ player.addEventListener('click', () => {
         console.log("This is one audio off");
         playcircle.style.display = 'none';
         playcirclePause.style.display = 'none'
-        
+
 
     }
 })
@@ -51,18 +51,18 @@ playcirclePause.addEventListener('click', () => {
 
 // This is two songs of js and ----------------------;
 const player2 = document.getElementById('player2');
-const playcircle2  =  document.getElementById('playcircle2');
-const playcirclePause2  =  document.getElementById('playcirclePause2');
-let audio2 = new Audio('dukan images/Shape-of-You-(Lofi)(PagalWorldl).mp3')
+const playcircle2 = document.getElementById('playcircle2');
+const playcirclePause2 = document.getElementById('playcirclePause2');
+let audio2 = new Audio('Shape-of-You-(Lofi)(PagalWorldl).mp3')
 player2.addEventListener('click', () => {
     console.log("This is two song foe you")
-    if (audio2.paused || audio2.currentTime<=0) {
+    if (audio2.paused || audio2.currentTime <= 0) {
         audio2.play()
         player2.classList.remove('player2');
         player2.classList.add('pauser2');
         playcircle2.style.display = 'block';
         playcirclePause2.style.display = 'none';
-        
+
     }
     else {
         audio2.pause()
@@ -96,11 +96,11 @@ playcirclePause2.addEventListener('click', () => {
 const player3 = document.getElementById('player3');
 const playcircle3 = document.getElementById('playcircle3');
 const playcirclePause3 = document.getElementById('playcirclePause3');
-let audio3 = new Audio('dukan images/Let-Me-Down-Slowly(PagalWorldl).mp3');
+let audio3 = new Audio('Let-Me-Down-Slowly(PagalWorldl).mp3');
 
 player3.addEventListener('click', () => {
     console.log("This is three sonsg for you")
-    if (audio3.paused || audio3.currentTime<=0){
+    if (audio3.paused || audio3.currentTime <= 0) {
         audio3.play()
         player3.classList.remove('player3');
         player3.classList.add('pauser3')
@@ -125,7 +125,7 @@ playcircle3.addEventListener('click', () => {
     playcirclePause3.style.display = 'block';
 
 
-    
+
 })
 playcirclePause3.addEventListener('click', () => {
     console.log("This is play right control off");
@@ -134,7 +134,7 @@ playcirclePause3.addEventListener('click', () => {
     playcirclePause3.style.display = 'none';
 
 
-    
+
 })
 
 
@@ -144,10 +144,10 @@ playcirclePause3.addEventListener('click', () => {
 const player4 = document.getElementById('player4');
 const playcircle4 = document.getElementById('playcircle4');
 const playcirclePause4 = document.getElementById('playcirclePause4');
-let audio4 = new Audio('dukan images/Unholy-(Slowed-and-Reverb)(PagalWorldl).mp3');
+let audio4 = new Audio('Unholy-(Slowed-and-Reverb)(PagalWorldl).mp3');
 
 player4.addEventListener('click', () => {
-    if (audio4.paused || audio4.currentTime<=0) {
+    if (audio4.paused || audio4.currentTime <= 0) {
         console.log("This is four songs for you")
         playcircle4.style.display = 'block';
         playcirclePause4.style.display = 'none'
@@ -182,10 +182,10 @@ playcirclePause4.addEventListener('click', () => {
 const player5 = document.getElementById('player5');
 const playcircle5 = document.getElementById('playcircle5');
 const playcirclePause5 = document.getElementById('playcirclePause5');
-let audio5 = new Audio('dukan images/Senorita---Camila-Cabello(PagalWorldl).mp3');
+let audio5 = new Audio('Senorita---Camila-Cabello(PagalWorldl).mp3');
 
 player5.addEventListener('click', () => {
-    if (audio5.paused || audio5.currentTime<=0) {
+    if (audio5.paused || audio5.currentTime <= 0) {
         console.log('This is five sonsg for you');
         player5.classList.remove('player5');
         player5.classList.add('pauser5');
@@ -216,12 +216,12 @@ playcirclePause5.addEventListener('click', () => {
 
 
 const player6 = document.getElementById('player6');
-let audio6 = new Audio('dukan images/baila conmingo.mp3')
+let audio6 = new Audio('baila conmingo.mp3')
 const playcircle6 = document.getElementById('playcircle6');
 const playcirclePause6 = document.getElementById('playcirclePause6');
 
 player6.addEventListener('click', () => {
-    if (audio6.paused || audio6.currentTime<=0) {
+    if (audio6.paused || audio6.currentTime <= 0) {
         console.log('This is six sonsg for you');
         player6.classList.remove('player6');
         player6.classList.add('pauser6');
@@ -251,12 +251,12 @@ playcirclePause6.addEventListener('click', () => {
 
 
 const player7 = document.getElementById('player7');
-let audio7 = new Audio('dukan images/electric.mp3');
+let audio7 = new Audio('electric.mp3');
 const playcircle7 = document.getElementById('playcircle7');
 const playcirclePause7 = document.getElementById('playcirclePause7');
 
 player7.addEventListener('click', () => {
-    if (audio7.paused || audio7.currentTime<=0) {
+    if (audio7.paused || audio7.currentTime <= 0) {
         console.log('This is seven sonsg for you');
         player7.classList.remove('player7');
         player7.classList.add('pauser7');
@@ -286,12 +286,12 @@ playcirclePause7.addEventListener('click', () => {
 
 
 const player8 = document.getElementById('player8');
-let audio8 = new Audio('dukan images/lil mama see.mp3')
+let audio8 = new Audio('lil mama see.mp3')
 const playcircle8 = document.getElementById('playcircle8');
 const playcirclePause8 = document.getElementById('playcirclePause8');
 
 player8.addEventListener('click', () => {
-    if (audio8.paused || audio8.currentTime<=0) {
+    if (audio8.paused || audio8.currentTime <= 0) {
         console.log('This is seven sonsg for you');
         player8.classList.remove('player8');
         player8.classList.add('pauser8');
@@ -324,10 +324,10 @@ playcirclePause8.addEventListener('click', () => {
 const player9 = document.getElementById('player9');
 const playcircle9 = document.getElementById('playcircle9');
 const playcirclePause9 = document.getElementById('playcirclePause9');
-let audio9 = new Audio('dukan images/Saree Ke Fall Sa R... Rajkumar 128 Kbps.mp3')
+let audio9 = new Audio('Saree Ke Fall Sa R... Rajkumar 128 Kbps.mp3')
 
 player9.addEventListener('click', () => {
-    if (audio9.paused || audio9.currentTime<=0) {
+    if (audio9.paused || audio9.currentTime <= 0) {
         console.log('This is seven sonsg for you');
         player9.classList.remove('player9');
         player9.classList.add('pauser9');
@@ -361,10 +361,10 @@ playcirclePause9.addEventListener('click', () => {
 const player10 = document.getElementById('player10');
 const playcircle10 = document.getElementById('playcircle10');
 const playcirclePause10 = document.getElementById('playcirclePause10');
-let audio10 = new Audio('dukan images/Tere Mast Mast Do Nain Dabangg 128 Kbps.mp3')
+let audio10 = new Audio('Tere Mast Mast Do Nain Dabangg 128 Kbps.mp3')
 
 player10.addEventListener('click', () => {
-    if (audio10.paused || audio10.currentTime<=0) {
+    if (audio10.paused || audio10.currentTime <= 0) {
         console.log('This is seven sonsg for you');
         player10.classList.remove('player10');
         player10.classList.add('pauser10');
@@ -399,10 +399,10 @@ playcirclePause10.addEventListener('click', () => {
 const player11 = document.getElementById('player11');
 const playcircle11 = document.getElementById('playcircle11');
 const playcirclePause11 = document.getElementById('playcirclePause11');
-let audio11 = new Audio('dukan images/Deewane Hum Nahi Hote(Selfiee)(PagalWorld.com.pe).mp3')
+let audio11 = new Audio('Deewane Hum Nahi Hote(Selfiee)(PagalWorld.com.pe).mp3')
 
 player11.addEventListener('click', () => {
-    if (audio11.paused || audio11.currentTime<=0) {
+    if (audio11.paused || audio11.currentTime <= 0) {
         console.log('This is seven sonsg for you');
         player11.classList.remove('player11');
         player11.classList.add('pauser11');
@@ -436,10 +436,10 @@ playcirclePause11.addEventListener('click', () => {
 const player12 = document.getElementById('player12');
 const playcircle12 = document.getElementById('playcircle12');
 const playcirclePause12 = document.getElementById('playcirclePause12');
-let audio12 = new Audio('dukan images/Gotilo(PaglaSongs).mp3')
+let audio12 = new Audio('Gotilo(PaglaSongs).mp3')
 
 player12.addEventListener('click', () => {
-    if (audio12.paused || audio12.currentTime<=0) {
+    if (audio12.paused || audio12.currentTime <= 0) {
         console.log('This is seven sonsg for you');
         player12.classList.remove('player12');
         player12.classList.add('pauser12');
@@ -473,10 +473,10 @@ playcirclePause12.addEventListener('click', () => {
 const player13 = document.getElementById('player13');
 const playcircle13 = document.getElementById('playcircle13');
 const playcirclePause13 = document.getElementById('playcirclePause13');
-let audio13 = new Audio('dukan images/Tere Naam Alka Yagnik 128 Kbps.mp3')
+let audio13 = new Audio('Tere Naam Alka Yagnik 128 Kbps.mp3')
 
 player13.addEventListener('click', () => {
-    if (audio13.paused || audio13.currentTime<=0) {
+    if (audio13.paused || audio13.currentTime <= 0) {
         console.log('This is seven sonsg for you');
         player13.classList.remove('player13');
         player13.classList.add('pauser13');
@@ -509,10 +509,10 @@ playcirclePause13.addEventListener('click', () => {
 const player14 = document.getElementById('player14');
 const playcircle14 = document.getElementById('playcircle14');
 const playcirclePause14 = document.getElementById('playcirclePause14');
-let audio14 = new Audio('dukan images/Kyaa Dil Ne Kahaa Alka Yagnik 128 Kbps.mp3')
+let audio14 = new Audio('Kyaa Dil Ne Kahaa Alka Yagnik 128 Kbps.mp3')
 
 player14.addEventListener('click', () => {
-    if (audio14.paused || audio14.currentTime<=0) {
+    if (audio14.paused || audio14.currentTime <= 0) {
         console.log('This is seven sonsg for you');
         player14.classList.remove('player14');
         player14.classList.add('pauser14');
@@ -549,10 +549,10 @@ playcirclePause14.addEventListener('click', () => {
 const player15 = document.getElementById('player15');
 const playcircle15 = document.getElementById('playcircle15');
 const playcirclePause15 = document.getElementById('playcirclePause15');
-let audio15 = new Audio('dukan images/Milenge Milenge, Ver. 1 Alka Yagnik 128 Kbps.mp3')
+let audio15 = new Audio('Milenge Milenge, Ver. 1 Alka Yagnik 128 Kbps.mp3')
 
 player15.addEventListener('click', () => {
-    if (audio15.paused || audio15.currentTime<=0) {
+    if (audio15.paused || audio15.currentTime <= 0) {
         console.log('This is seven sonsg for you');
         player15.classList.remove('player15');
         player15.classList.add('pauser15');
@@ -587,10 +587,10 @@ playcirclePause15.addEventListener('click', () => {
 const player16 = document.getElementById('player16');
 const playcircle16 = document.getElementById('playcircle16');
 const playcirclePause16 = document.getElementById('playcirclePause16');
-let audio16 = new Audio('dukan images/Ae-Dil-Hai-Mushkil-2.0---RCR(PagalWorldl).mp3')
+let audio16 = new Audio('Ae-Dil-Hai-Mushkil-2.0---RCR(PagalWorldl).mp3')
 
 player16.addEventListener('click', () => {
-    if (audio16.paused || audio16.currentTime<=0) {
+    if (audio16.paused || audio16.currentTime <= 0) {
         console.log('This is seven sonsg for you');
         player16.classList.remove('player16');
         player16.classList.add('pauser16');
@@ -627,10 +627,10 @@ playcirclePause16.addEventListener('click', () => {
 const player17 = document.getElementById('player17');
 const playcircle17 = document.getElementById('playcircle17');
 const playcirclePause17 = document.getElementById('playcirclePause17');
-let audio17 = new Audio('dukan images/Zaroori Tha.mp3')
+let audio17 = new Audio('Zaroori Tha.mp3')
 
 player17.addEventListener('click', () => {
-    if (audio17.paused || audio17.currentTime<=0) {
+    if (audio17.paused || audio17.currentTime <= 0) {
         console.log('This is seven sonsg for you');
         player17.classList.remove('player17');
         player17.classList.add('pauser17');
@@ -665,10 +665,10 @@ playcirclePause17.addEventListener('click', () => {
 const player18 = document.getElementById('player18');
 const playcircle18 = document.getElementById('playcircle18');
 const playcirclePause18 = document.getElementById('playcirclePause18');
-let audio18 = new Audio('dukan images/Aap Ki Khatir Himesh Reshammiya 128 Kbps.mp3')
+let audio18 = new Audio('Aap Ki Khatir Himesh Reshammiya 128 Kbps.mp3')
 
 player18.addEventListener('click', () => {
-    if (audio18.paused || audio18.currentTime<=0) {
+    if (audio18.paused || audio18.currentTime <= 0) {
         console.log('This is seven sonsg for you');
         player18.classList.remove('player18');
         player18.classList.add('pauser18');
@@ -703,10 +703,10 @@ playcirclePause18.addEventListener('click', () => {
 const player19 = document.getElementById('player19');
 const playcircle19 = document.getElementById('playcircle19');
 const playcirclePause19 = document.getElementById('playcirclePause19');
-let audio19 = new Audio('dukan images/Banjaara(PaglaSongs).mp3')
+let audio19 = new Audio('Banjaara(PaglaSongs).mp3')
 
 player19.addEventListener('click', () => {
-    if (audio19.paused || audio19.currentTime<=0) {
+    if (audio19.paused || audio19.currentTime <= 0) {
         console.log('This is seven sonsg for you');
         player19.classList.remove('player19');
         player19.classList.add('pauser19');
@@ -741,10 +741,10 @@ playcirclePause19.addEventListener('click', () => {
 const player20 = document.getElementById('player20');
 const playcircle20 = document.getElementById('playcircle20');
 const playcirclePause20 = document.getElementById('playcirclePause20');
-let audio20 = new Audio('dukan images/Mohabbat Dil Ka Sakoon_192(Ghantalele.com).mp3')
+let audio20 = new Audio('Mohabbat Dil Ka Sakoon_192(Ghantalele.com).mp3')
 
 player20.addEventListener('click', () => {
-    if (audio20.paused || audio20.currentTime<=0) {
+    if (audio20.paused || audio20.currentTime <= 0) {
         console.log('This is seven sonsg for you');
         player20.classList.remove('player20');
         player20.classList.add('pauser20');
@@ -777,10 +777,10 @@ playcirclePause20.addEventListener('click', () => {
 const player21 = document.getElementById('player21');
 const playcircle21 = document.getElementById('playcircle21');
 const playcirclePause21 = document.getElementById('playcirclePause21');
-let audio21 = new Audio('dukan images/Meri Ho Ja Sachet Tandon 128 Kbps.mp3')
+let audio21 = new Audio('Meri Ho Ja Sachet Tandon 128 Kbps.mp3')
 
 player21.addEventListener('click', () => {
-    if (audio21.paused || audio21.currentTime<=0) {
+    if (audio21.paused || audio21.currentTime <= 0) {
         console.log('This is seven sonsg for you');
         player21.classList.remove('player21');
         player21.classList.add('pauser21');
@@ -813,10 +813,10 @@ playcirclePause21.addEventListener('click', () => {
 const player22 = document.getElementById('player22');
 const playcircle22 = document.getElementById('playcircle22');
 const playcirclePause22 = document.getElementById('playcirclePause22');
-let audio22 = new Audio('dukan images/Dahi-Shakkar(PaglaSongs).mp3')
+let audio22 = new Audio('Dahi-Shakkar(PaglaSongs).mp3')
 
 player22.addEventListener('click', () => {
-    if (audio22.paused || audio22.currentTime<=0) {
+    if (audio22.paused || audio22.currentTime <= 0) {
         console.log('This is seven sonsg for you');
         player22.classList.remove('player22');
         player22.classList.add('pauser22');
@@ -849,10 +849,10 @@ playcirclePause22.addEventListener('click', () => {
 const player23 = document.getElementById('player23');
 const playcircle23 = document.getElementById('playcircle23');
 const playcirclePause23 = document.getElementById('playcirclePause23');
-let audio23 = new Audio('dukan images/Tu Hi Mera Dil Hai Soumajit Biswas 128 Kbps.mp3')
+let audio23 = new Audio('Tu Hi Mera Dil Hai Soumajit Biswas 128 Kbps.mp3')
 
 player23.addEventListener('click', () => {
-    if (audio23.paused || audio23.currentTime<=0) {
+    if (audio23.paused || audio23.currentTime <= 0) {
         console.log('This is seven sonsg for you');
         player23.classList.remove('player23');
         player23.classList.add('pauser23');
@@ -885,10 +885,10 @@ playcirclePause23.addEventListener('click', () => {
 const player24 = document.getElementById('player24');
 const playcircle24 = document.getElementById('playcircle24');
 const playcirclePause24 = document.getElementById('playcirclePause24');
-let audio24 = new Audio('dukan images/Saure Ghar Yaariyan 2 128 Kbps.mp3')
+let audio24 = new Audio('Saure Ghar Yaariyan 2 128 Kbps.mp3')
 
 player24.addEventListener('click', () => {
-    if (audio24.paused || audio24.currentTime<=0) {
+    if (audio24.paused || audio24.currentTime <= 0) {
         console.log('This is seven sonsg for you');
         player24.classList.remove('player24');
         player24.classList.add('pauser24');
@@ -924,10 +924,10 @@ playcirclePause24.addEventListener('click', () => {
 const player25 = document.getElementById('player25');
 const playcircle25 = document.getElementById('playcircle25');
 const playcirclePause25 = document.getElementById('playcirclePause25');
-let audio25 = new Audio('dukan images/Teri-Yaadon-Se---Salman-Ali(PaglaSongs).mp3')
+let audio25 = new Audio('Teri-Yaadon-Se---Salman-Ali(PaglaSongs).mp3')
 
 player25.addEventListener('click', () => {
-    if (audio25.paused || audio25.currentTime<=0) {
+    if (audio25.paused || audio25.currentTime <= 0) {
         console.log('This is seven sonsg for you');
         player25.classList.remove('player25');
         player25.classList.add('pauser25');
@@ -960,10 +960,10 @@ playcirclePause25.addEventListener('click', () => {
 const player26 = document.getElementById('player26');
 const playcircle26 = document.getElementById('playcircle26');
 const playcirclePause26 = document.getElementById('playcirclePause26');
-let audio26 = new Audio('dukan images/Main-Dil-Ko-Samjha-Lunga(PaglaSongs).mp3')
+let audio26 = new Audio('Main-Dil-Ko-Samjha-Lunga(PaglaSongs).mp3')
 
 player26.addEventListener('click', () => {
-    if (audio26.paused || audio26.currentTime<=0) {
+    if (audio26.paused || audio26.currentTime <= 0) {
         console.log('This is seven sonsg for you');
         player26.classList.remove('player26');
         player26.classList.add('pauser26');
@@ -996,10 +996,10 @@ playcirclePause26.addEventListener('click', () => {
 const player27 = document.getElementById('player27');
 const playcircle27 = document.getElementById('playcircle27');
 const playcirclePause27 = document.getElementById('playcirclePause27');
-let audio27 = new Audio('dukan images/Piya Dream Girl 2 128 Kbps.mp3')
+let audio27 = new Audio('Piya Dream Girl 2 128 Kbps.mp3')
 
 player27.addEventListener('click', () => {
-    if (audio27.paused || audio27.currentTime<=0) {
+    if (audio27.paused || audio27.currentTime <= 0) {
         console.log('This is seven sonsg for you');
         player27.classList.remove('player27');
         player27.classList.add('pauser27');
@@ -1033,10 +1033,10 @@ playcirclePause27.addEventListener('click', () => {
 const player28 = document.getElementById('player28');
 const playcircle28 = document.getElementById('playcircle28');
 const playcirclePause28 = document.getElementById('playcirclePause28');
-let audio28 = new Audio('dukan images/Paagla_1.mp3')
+let audio28 = new Audio('Paagla_1.mp3')
 
 player28.addEventListener('click', () => {
-    if (audio28.paused || audio28.currentTime<=0) {
+    if (audio28.paused || audio28.currentTime <= 0) {
         console.log('This is seven sonsg for you');
         player28.classList.remove('player28');
         player28.classList.add('pauser28');
@@ -1069,10 +1069,10 @@ playcirclePause28.addEventListener('click', () => {
 const player29 = document.getElementById('player29');
 const playcircle29 = document.getElementById('playcircle29');
 const playcirclePause29 = document.getElementById('playcirclePause29');
-let audio29 = new Audio('dukan images/Jiyaa-Laage-Naa(PaglaSongs).mp3')
+let audio29 = new Audio('Jiyaa-Laage-Naa(PaglaSongs).mp3')
 
 player29.addEventListener('click', () => {
-    if (audio29.paused || audio29.currentTime<=0) {
+    if (audio29.paused || audio29.currentTime <= 0) {
         console.log('This is seven sonsg for you');
         player29.classList.remove('player29');
         player29.classList.add('pauser29');
@@ -1104,10 +1104,10 @@ playcirclePause29.addEventListener('click', () => {
 const player30 = document.getElementById('player30');
 const playcircle30 = document.getElementById('playcircle30');
 const playcirclePause30 = document.getElementById('playcirclePause30');
-let audio30 = new Audio('dukan images/Dil Hai Tumhaara Alka Yagnik 128 Kbps.mp3')
+let audio30 = new Audio('Dil Hai Tumhaara Alka Yagnik 128 Kbps.mp3')
 
 player30.addEventListener('click', () => {
-    if (audio30.paused || audio30.currentTime<=0) {
+    if (audio30.paused || audio30.currentTime <= 0) {
         console.log('This is seven sonsg for you');
         player30.classList.remove('player30');
         player30.classList.add('pauser30');
@@ -1139,10 +1139,10 @@ playcirclePause30.addEventListener('click', () => {
 const player31 = document.getElementById('player31');
 const playcircle31 = document.getElementById('playcircle31');
 const playcirclePause31 = document.getElementById('playcirclePause31');
-let audio31 = new Audio('dukan images/Kisise Tum Pyar Karo Andaaz 2003 128 Kbps.mp3')
+let audio31 = new Audio('Kisise Tum Pyar Karo Andaaz 2003 128 Kbps.mp3')
 
 player31.addEventListener('click', () => {
-    if (audio31.paused || audio31.currentTime<=0) {
+    if (audio31.paused || audio31.currentTime <= 0) {
         console.log('This is seven sonsg for you');
         player31.classList.remove('player31');
         player31.classList.add('pauser31');
@@ -1174,10 +1174,10 @@ playcirclePause31.addEventListener('click', () => {
 const player32 = document.getElementById('player32');
 const playcircle32 = document.getElementById('playcircle32');
 const playcirclePause32 = document.getElementById('playcirclePause32');
-let audio32 = new Audio('dukan images/Ae Dil Hai Mushkil Title Track Pritam 128 Kbps.mp3')
+let audio32 = new Audio('Ae Dil Hai Mushkil Title Track Pritam 128 Kbps.mp3')
 
 player32.addEventListener('click', () => {
-    if (audio32.paused || audio32.currentTime<=0) {
+    if (audio32.paused || audio32.currentTime <= 0) {
         console.log('This is seven sonsg for you');
         player32.classList.remove('player32');
         player32.classList.add('pauser32');
@@ -1325,14 +1325,14 @@ Login.addEventListener('click', () => {
 })
 
 const submit_reset = document.getElementById('submit_reset');
-submit_reset.addEventListener('click', () =>{
+submit_reset.addEventListener('click', () => {
     logoinInner.style.display = 'none'
     fisrtrange.style.animationName = 'rangeback'
     logoinInnersecond.style.display = 'block'
 
 })
 
-const remove_login =  document.getElementById('remove_login');
+const remove_login = document.getElementById('remove_login');
 remove_login.addEventListener('click', () => {
     console.log('Hey i am off login page');
     logoinInner.style.display = 'none'
@@ -1353,7 +1353,7 @@ const range_js = document.getElementById('range_js');
 range_js.style.width = '50%'
 
 const remove_login_second = document.getElementById('remove_login_second');
-remove_login_second.addEventListener('click', () =>{
+remove_login_second.addEventListener('click', () => {
     console.log('This is second close bitton cliked')
     logoinInnersecond.style.display = 'none'
 
@@ -1363,16 +1363,16 @@ remove_login_second.addEventListener('click', () =>{
 // This is third section javascript
 const submit_reset_third = document.getElementById('submit_reset_third');
 const range_js_third = document.getElementById('range_js_third');
-const remove_login_Third= document.getElementById('remove_login_Third');
+const remove_login_Third = document.getElementById('remove_login_Third');
 const logoinInnertthird = document.getElementById('logoinInnertthird');
-const  back_section_Third = document.getElementById('back_section_Third');
+const back_section_Third = document.getElementById('back_section_Third');
 range_js_third.style.width = '75%';
 range_js_third.style.animationName = 'rangeThird';
 submit_reset_third.addEventListener('click', () => {
     logoinInnersecond.style.display = 'none'
     logoinInnertthird.style.display = 'block'
 
-  
+
 })
 remove_login_Third.addEventListener('click', () => {
     console.log('This is third section close button cliked')
@@ -1393,7 +1393,7 @@ back_section_Third.addEventListener('click', () => {
 // This is four section of javascript
 const submit_reset_four = document.getElementById('submit_reset_four');
 const logoinInnertfour = document.getElementById('logoinInnertfour');
-const back_section_four =document.getElementById('back_section_four');
+const back_section_four = document.getElementById('back_section_four');
 const remove_login_four = document.getElementById('remove_login_four');
 const range_js_four = document.getElementById('range_js_four')
 const complete = document.getElementById('complete');
@@ -1426,7 +1426,7 @@ complete.addEventListener('click', () => {
 
 setInterval(() => {
     logoinInnertfour.style.display = 'none'
-    
+
 }, 9000);
 // ================================= ================================= =================================
 
@@ -1451,33 +1451,33 @@ imgHiro2.style.display = 'none'
 imgHiro3.style.display = 'none'
 imgHiro4.style.display = 'none'
 setTimeout(() => {
-imgHiro1.style.display = 'block'
-    
+    imgHiro1.style.display = 'block'
+
 }, 0);
 setTimeout(() => {
     imgHiro1.style.animationName = 'AnimationHiro2'
-        
+
 }, 4000);
 setTimeout(() => {
     imgHiro1.style.animationName = 'AnimationHiro2'
     imgHiro1.style.display = 'none'
     imgHiro2.style.display = 'block'
-        
+
 }, 5010);
 setTimeout(() => {
     imgHiro2.style.animationName = 'AnimationHiro2'
 
-        
+
 }, 14000);
 setTimeout(() => {
     imgHiro2.style.display = 'none'
     imgHiro3.style.display = 'block'
-        
+
 }, 15010);
 setTimeout(() => {
     imgHiro3.style.animationName = 'AnimationHiro2'
 
-        
+
 }, 28000);
 setTimeout(() => {
     imgHiro3.style.display = 'none'
@@ -1499,7 +1499,7 @@ moreItmebtn.addEventListener('click', (e) => {
     console.log('This is moreItmebtn of active now', e);
     displayHome.style.display = 'none';
     MorePage.style.display = 'block';
-    
+
 
 
 
@@ -1511,20 +1511,20 @@ console.log(Manname)
 Mannameadd.innerHTML = Manname;
 
 
-document.getElementById('tool').addEventListener('click', function(){
+document.getElementById('tool').addEventListener('click', function () {
     console.log("This is opne tab of tool");
     document.getElementById('tool').style.display = 'none';
     document.getElementById('tools').style.display = 'flex';
     document.getElementById('flag').style.display = 'none';
     document.getElementById('five').style.display = 'flex';
-  
+
 })
-document.getElementById('tools').addEventListener('click', () =>{
+document.getElementById('tools').addEventListener('click', () => {
     console.log("This is opne tab of tool off");
-   document.getElementById('five').style.display = 'none';
-   document.getElementById('tool').style.display = 'flex';
-   document.getElementById('flag').style.display = 'block';
-   document.getElementById('tools').style.display = 'none';
+    document.getElementById('five').style.display = 'none';
+    document.getElementById('tool').style.display = 'flex';
+    document.getElementById('flag').style.display = 'block';
+    document.getElementById('tools').style.display = 'none';
 
 })
 
