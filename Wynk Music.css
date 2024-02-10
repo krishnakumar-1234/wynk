@@ -1,0 +1,3449 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    color: white;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;   
+}
+:root {
+    --svg-size: 24px;
+    --color: rgb(50, 50, 50);
+    --background: rgba(128, 128, 128, 0);
+}
+
+
+/* This is header of styling css */
+#header{
+    top: 0;
+    z-index: 5;
+    width: 100%;
+    height: 72px;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    background-color: black;
+    justify-content: space-between;
+}
+.logo{
+    width: 30%;
+    display: flex;
+    align-items: center;
+
+}
+.logo img{
+    width: 72px;
+}
+.logo strong{
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.searching{
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+.search_input{
+    display: flex;
+    align-items: center;
+
+}
+.search_input svg{
+    left: 50px;
+    width: var(--svg-size);
+    position: relative;
+}
+.search_input input{
+    width: 280px;
+    height: 42px;
+    font-size: 1em;
+    color: white;
+    font-style: italic;
+    text-align: center;
+    border-radius: 100px;
+    transition-duration: 0.50s;
+    border: 2px solid rgb(47, 47, 47);
+    background-color: var(--background);
+
+}
+.search_input input:focus{
+    width: 350px;
+}
+.Subscription{
+    width: 190px;
+    display: flex;
+    align-items: center;
+    transition-duration: 0.20s;
+    justify-content: space-evenly;
+
+}
+.Subscription:hover{
+    color: gray;
+}
+.Subscription svg{
+    width: var(--svg-size);
+    height: var(--svg-size);
+}
+.Login{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.Login_C:hover{
+    color: gray;
+
+
+}
+.Login_C{
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    transition-duration: 0.20s;
+
+
+}
+.opation{
+    cursor: pointer;
+
+
+}
+@media (max-width: 980px) {.Subscription{display: none;}}
+@media (max-width: 638px) {.Login_C{display: none;}}
+@media (max-width: 637px) {.searching input{display: none;}
+.searching svg{cursor: pointer;}}
+/* The ned of styling css header */
+
+
+/* This is improtan liks of heading */
+.improtant_links{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.links_name{
+    width: 95%;
+    margin-top: 20px;
+    height: fit-content;
+    text-align: center;
+    justify-content: space-evenly;
+    
+}
+.links_name a{
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+    transition-duration: 0.10s;
+    color: rgb(165, 165, 165);
+   
+}
+.links_name a:hover{
+    text-decoration: underline;
+
+}
+@media (max-width: 700px) {
+    .improtant_links {
+        display: none;
+    }
+}
+/* The ned of improtant if heading */
+
+
+/* This is hiro of styling css */
+.hero{
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+
+    justify-content: space-evenly;
+
+
+}
+@media (max-width: 600px) {
+    .hero {
+        margin-top: 100px;
+    }
+}
+.hiro_images {
+    width: 95%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    overflow: scroll;
+}
+.hiro_images img {
+    height: 50%;
+    border: 2px outset white;
+    width: 70%;
+    animation-name: AnimationHiro1;
+    animation-duration: 1s;
+    animation-iteration-count: calc(1);
+    margin-left: 20px;
+    border-radius: 10px;
+   
+}
+@keyframes AnimationHiro1 {
+    0%{
+        transform: translate(1100px);
+    }
+    100%{
+        transform: translate(0);
+    }
+    
+}
+
+@keyframes AnimationHiro2 {
+    0%{
+        transform: translate(0px);
+    }
+    100%{
+        transform: translate(-1100px);
+    }
+    
+}
+
+/* The ned of hiro of styling css */
+
+
+
+/* This is heading of all songs of title tell user */
+.Recently_Played{
+    width: 100%;
+    height: fit-content;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+.title_container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    justify-content: center;
+
+}
+.title{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.title h1{
+    font-size: 1.50em;
+
+}
+.title p{
+    width: 60px;
+    height: 25px;
+    margin-right: 100px;
+    color: red;
+    display: flex;
+    align-items: center;
+    border-radius: 100px;
+    justify-content: center;
+
+}
+@media (max-width: 1225px) {
+    .title p{
+        margin-right: 10px;
+        background-color: red;
+        color: white;
+
+    }
+}
+.title p:hover{
+    color: white;
+    background-color: red;
+}
+/* The end of heading of all songs of title tell user */
+
+/* This is songs of the first container */
+.items_of_songs{
+    width: 100%;
+    display: flex;
+    margin-top: 50px;
+    height: fit-content;
+    align-items: center;
+    justify-content: center;
+
+ 
+}
+.songs_continer{
+    width: 90%;
+    display: flex;
+    overflow: scroll;
+    text-align: center;
+
+
+}
+.songs_rel{
+    margin-left: 10px;
+    height: fit-content;
+    width: fit-content;
+    display: inline-block;
+    
+}
+.container_icons{
+    opacity: 0;
+    display: flex;
+    width: 126.22px;
+    height: 126.22px;
+    align-items: center;
+    justify-content: center;
+
+    
+}
+.container_icons:hover{
+    opacity: 1;
+    background-color: #21252d62;
+
+}
+@keyframes playcircle {
+    0%{
+        transform: translate(100px);
+
+    }
+    100%{
+        transform: translate(0);
+
+
+        
+    }
+    
+}
+
+
+/* This is all sonsg of title of bottom */
+.song_title {
+    margin-top: 4px;
+    text-align: start;
+
+
+}
+.song_title h1{
+    font-size: 1.20em;
+    line-height: 10px;
+
+
+}
+.song_title p{
+    color: rgb(69, 69, 69);
+    font-size: 0.70em;
+
+}
+/* The end  of is all sonsg of title of bottom */
+
+
+/* artist_container  of styling*/
+.artist_container{
+    width: 100%;
+    display: flex;
+    margin-top: 30px;
+    align-items: center;
+    height: fit-content;
+    justify-content: center;
+
+}
+.artist_n_c_i{
+    width: 90%;
+    display: flex;
+    overflow: scroll;
+    text-align: center;
+    height: fit-content;
+
+
+}
+.artist_rel{
+    cursor: pointer;
+    margin-left: 10px;
+    margin-top: 10px;
+    display: inline-block;
+
+}
+.artist img{
+    width: 126.22px;
+    height: 126.22px;
+    border-radius: 100px;
+
+}
+.artist_title{
+    font-size: 1.20em;
+    
+}
+/* The end artist_container  of styling */
+@media (max-width:500px) {.songs_rel{margin: 10px;}.song_title{line-height: 20px;}.container_icons{opacity: 1;}.player img{top: 81px;left: 38px;}    }
+
+
+
+/* THIS IS SETUP IMAGE FORM CSS PROPERTEIS */
+
+.song {
+    cursor: pointer;
+    width: 126.22px;
+    height: 126.22px;
+    border-radius: 6pt;
+    background-size: cover;
+    background-image: url(imgaes/Unstoppable\ Sia\ 128\ Kbps.png);
+
+}
+
+.player {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 100px;
+    filter:drop-shadow(100);
+    background-repeat: no-repeat;
+    background-color: chartreuse;
+    background-image: url(circle-play-regular\ \(1\).svg);
+
+}
+.pauser {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 100px;
+    filter:drop-shadow(100);
+    background-repeat: no-repeat;
+    background-color: chartreuse;
+    background-image: url(circle-pause-regular.svg);
+
+}
+.playcircle{
+    right: 3%;
+    bottom: 10%;
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    border-radius: 1000px;
+    animation-name: playcircle;
+    background-position: center;
+    animation-duration: 0.50s;
+    background-repeat: no-repeat;
+    background-size: calc(58%);
+    cursor: pointer;
+    display: none;
+    box-shadow: 2px 0px 10px 2px gray;
+    background-image: url(circle-pause-regular.svg);
+    animation-iteration-count: calc(1);
+    background-color: chartreuse;
+}
+.playcirclePause{
+    right: 3%;
+    bottom: 10%;
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    border-radius: 1000px;
+    animation-name: playcircle;
+    background-position: center;
+    animation-duration: 0.50s;
+    box-shadow: 2px 0px 10px 2px gray;
+    background-repeat: no-repeat;
+    background-size: calc(58%);
+    cursor: pointer;
+    display: none;
+    background-image: url(circle-play-regular\ \(1\).svg);
+    animation-iteration-count: calc(1);
+    background-color: chartreuse;
+    
+}
+
+
+
+.song2 {
+    cursor: pointer;
+    width: 126.22px;
+    height: 126.22px;
+    border-radius: 6pt;
+    background-size: cover;
+    background-image: url(imgaes/Shape-of-You.png);
+
+}
+.player2 {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 100px;
+    filter:drop-shadow(100);
+    background-repeat: no-repeat;
+    background-color: chartreuse;
+    background-image: url(circle-play-regular\ \(1\).svg);
+
+}
+.pauser2 {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 100px;
+    filter:drop-shadow(100);
+    background-repeat: no-repeat;
+    background-color: chartreuse;
+    background-image: url(circle-pause-regular.svg);
+
+}
+.playcircle2{
+    right: 3%;
+    bottom: 10%;
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    border-radius: 1000px;
+    animation-name: playcircle;
+    background-position: center;
+    animation-duration: 0.50s;
+    background-repeat: no-repeat;
+    background-size: calc(58%);
+    cursor: pointer;
+    display: none;
+    box-shadow: 2px 0px 10px 2px gray;
+    background-image: url(circle-pause-regular.svg);
+    animation-iteration-count: calc(1);
+    background-color: chartreuse;
+}
+.playcirclePause2{
+    right: 3%;
+    bottom: 10%;
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    border-radius: 1000px;
+    animation-name: playcircle;
+    background-position: center;
+    animation-duration: 0.50s;
+    box-shadow: 2px 0px 10px 2px gray;
+    background-repeat: no-repeat;
+    background-size: calc(58%);
+    cursor: pointer;
+    display: none;
+    background-image: url(circle-play-regular\ \(1\).svg);
+    animation-iteration-count: calc(1);
+    background-color: chartreuse;
+}
+
+
+.song3 {
+    cursor: pointer;
+    width: 126.22px;
+    height: 126.22px;
+    border-radius: 6pt;
+    background-size: cover;
+    background-image: url(imgaes/Let-Me-Down-Slowly.png);
+
+}
+
+.player3 {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 100px;
+    filter:drop-shadow(100);
+    background-repeat: no-repeat;
+    background-color: chartreuse;
+    background-image: url(circle-play-regular\ \(1\).svg);
+
+}
+.pauser3 {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 100px;
+    filter:drop-shadow(100);
+    background-repeat: no-repeat;
+    background-color: chartreuse;
+    background-image: url(circle-pause-regular.svg);
+
+}
+.playcircle3{
+    right: 3%;
+    bottom: 10%;
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    border-radius: 1000px;
+    animation-name: playcircle;
+    background-position: center;
+    animation-duration: 0.50s;
+    background-repeat: no-repeat;
+    background-size: calc(58%);
+    cursor: pointer;
+    display: none;
+    box-shadow: 2px 0px 10px 2px gray;
+    background-image: url(circle-pause-regular.svg);
+    animation-iteration-count: calc(1);
+    background-color: chartreuse;
+}
+.playcirclePause3{
+    right: 3%;
+    bottom: 10%;
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    border-radius: 1000px;
+    animation-name: playcircle;
+    background-position: center;
+    animation-duration: 0.50s;
+    box-shadow: 2px 0px 10px 2px gray;
+    background-repeat: no-repeat;
+    background-size: calc(58%);
+    cursor: pointer;
+    display: none;
+    background-image: url(circle-play-regular\ \(1\).svg);
+    animation-iteration-count: calc(1);
+    background-color: chartreuse;
+}
+
+
+.song4 {
+    cursor: pointer;
+    width: 126.22px;
+    height: 126.22px;
+    border-radius: 6pt;
+    background-size: cover;
+    background-image: url(imgaes/Unholy-\(Slowed-and-Reverb\).png);
+
+}
+.player4 {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 100px;
+    filter:drop-shadow(100);
+    background-repeat: no-repeat;
+    background-color: chartreuse;
+    background-image: url(circle-play-regular\ \(1\).svg);
+
+}
+.pauser4 {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 100px;
+    filter:drop-shadow(100);
+    background-repeat: no-repeat;
+    background-color: chartreuse;
+    background-image: url(circle-pause-regular.svg);
+
+}
+.playcircle4{
+    right: 3%;
+    bottom: 10%;
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    border-radius: 1000px;
+    animation-name: playcircle;
+    background-position: center;
+    animation-duration: 0.50s;
+    background-repeat: no-repeat;
+    background-size: calc(58%);
+    cursor: pointer;
+    display: none;
+    box-shadow: 2px 0px 10px 2px gray;
+    background-image: url(circle-pause-regular.svg);
+    animation-iteration-count: calc(1);
+    background-color: chartreuse;
+}
+.playcirclePause4{
+    right: 3%;
+    bottom: 10%;
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    border-radius: 1000px;
+    animation-name: playcircle;
+    background-position: center;
+    animation-duration: 0.50s;
+    box-shadow: 2px 0px 10px 2px gray;
+    background-repeat: no-repeat;
+    background-size: calc(58%);
+    cursor: pointer;
+    display: none;
+    background-image: url(circle-play-regular\ \(1\).svg);
+    animation-iteration-count: calc(1);
+    background-color: chartreuse;
+}
+
+
+.song5 {
+    cursor: pointer;
+    width: 126.22px;
+    height: 126.22px;
+    border-radius: 6pt;
+    background-size: cover;
+    background-image: url(imgaes/Senorita---Camila-Cabello\(PagalWorldl\).png);
+
+}
+.player5 {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 100px;
+    filter:drop-shadow(100);
+    background-repeat: no-repeat;
+    background-color: chartreuse;
+    background-image: url(circle-play-regular\ \(1\).svg);
+
+}
+.pauser5 {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 100px;
+    filter:drop-shadow(100);
+    background-repeat: no-repeat;
+    background-color: chartreuse;
+    background-image: url(circle-pause-regular.svg);
+
+}
+.playcircle5{
+    right: 3%;
+    bottom: 10%;
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    border-radius: 1000px;
+    animation-name: playcircle;
+    background-position: center;
+    animation-duration: 0.50s;
+    background-repeat: no-repeat;
+    background-size: calc(58%);
+    cursor: pointer;
+    display: none;
+    box-shadow: 2px 0px 10px 2px gray;
+    background-image: url(circle-pause-regular.svg);
+    animation-iteration-count: calc(1);
+    background-color: chartreuse;
+}
+.playcirclePause5{
+    right: 3%;
+    bottom: 10%;
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    border-radius: 1000px;
+    animation-name: playcircle;
+    background-position: center;
+    animation-duration: 0.50s;
+    box-shadow: 2px 0px 10px 2px gray;
+    background-repeat: no-repeat;
+    background-size: calc(58%);
+    cursor: pointer;
+    display: none;
+    background-image: url(circle-play-regular\ \(1\).svg);
+    animation-iteration-count: calc(1);
+    background-color: chartreuse;
+}
+
+
+.song6 {
+    cursor: pointer;
+    width: 126.22px;
+    height: 126.22px;
+    border-radius: 6pt;
+    background-size: cover;
+    background-image: url(imgaes/baila\ conmingo.png);
+
+}
+.player6 {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 100px;
+    filter:drop-shadow(100);
+    background-repeat: no-repeat;
+    background-color: chartreuse;
+    background-image: url(circle-play-regular\ \(1\).svg);
+
+}
+.pauser6 {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 100px;
+    filter:drop-shadow(100);
+    background-repeat: no-repeat;
+    background-color: chartreuse;
+    background-image: url(circle-pause-regular.svg);
+
+}
+.playcircle6{
+    right: 3%;
+    bottom: 10%;
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    border-radius: 1000px;
+    animation-name: playcircle;
+    background-position: center;
+    animation-duration: 0.50s;
+    background-repeat: no-repeat;
+    background-size: calc(58%);
+    cursor: pointer;
+    display: none;
+    box-shadow: 2px 0px 10px 2px gray;
+    background-image: url(circle-pause-regular.svg);
+    animation-iteration-count: calc(1);
+    background-color: chartreuse;
+}
+.playcirclePause6{
+    right: 3%;
+    bottom: 10%;
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    border-radius: 1000px;
+    animation-name: playcircle;
+    background-position: center;
+    animation-duration: 0.50s;
+    box-shadow: 2px 0px 10px 2px gray;
+    background-repeat: no-repeat;
+    background-size: calc(58%);
+    cursor: pointer;
+    display: none;
+    background-image: url(circle-play-regular\ \(1\).svg);
+    animation-iteration-count: calc(1);
+    background-color: chartreuse;
+}
+
+
+.song7 {
+    cursor: pointer;
+    width: 126.22px;
+    height: 126.22px;
+    border-radius: 6pt;
+    background-size: cover;
+    background-image: url(imgaes/electric.png);
+
+}
+.player7 {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 100px;
+    filter:drop-shadow(100);
+    background-repeat: no-repeat;
+    background-color: chartreuse;
+    background-image: url(circle-play-regular\ \(1\).svg);
+
+}
+.pauser7 {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 100px;
+    filter:drop-shadow(100);
+    background-repeat: no-repeat;
+    background-color: chartreuse;
+    background-image: url(circle-pause-regular.svg);
+
+}
+.playcircle7 {
+    right: 3%;
+    bottom: 10%;
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    border-radius: 1000px;
+    animation-name: playcircle;
+    background-position: center;
+    animation-duration: 0.50s;
+    background-repeat: no-repeat;
+    background-size: calc(58%);
+    cursor: pointer;
+    display: none;
+    box-shadow: 2px 0px 10px 2px gray;
+    background-image: url(circle-pause-regular.svg);
+    animation-iteration-count: calc(1);
+    background-color: chartreuse;
+}
+.playcirclePause7 {
+    right: 3%;
+    bottom: 10%;
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    border-radius: 1000px;
+    animation-name: playcircle;
+    background-position: center;
+    animation-duration: 0.50s;
+    box-shadow: 2px 0px 10px 2px gray;
+    background-repeat: no-repeat;
+    background-size: calc(58%);
+    cursor: pointer;
+    display: none;
+    background-image: url(circle-play-regular\ \(1\).svg);
+    animation-iteration-count: calc(1);
+    background-color: chartreuse;
+}
+
+
+.song8 {
+    cursor: pointer;
+    width: 126.22px;
+    height: 126.22px;
+    border-radius: 6pt;
+    background-size: cover;
+    background-image: url(imgaes/lil\ mama\ see.png);
+
+}
+
+.player8 {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 100px;
+    filter:drop-shadow(100);
+    background-repeat: no-repeat;
+    background-color: chartreuse;
+    background-image: url(circle-play-regular\ \(1\).svg);
+
+}
+.pauser8 {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 100px;
+    filter:drop-shadow(100);
+    background-repeat: no-repeat;
+    background-color: chartreuse;
+    background-image: url(circle-pause-regular.svg);
+
+}
+.playcircle8 {
+    right: 3%;
+    bottom: 10%;
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    border-radius: 1000px;
+    animation-name: playcircle;
+    background-position: center;
+    animation-duration: 0.50s;
+    background-repeat: no-repeat;
+    background-size: calc(58%);
+    cursor: pointer;
+    display: none;
+    box-shadow: 2px 0px 10px 2px gray;
+    background-image: url(circle-pause-regular.svg);
+    animation-iteration-count: calc(1);
+    background-color: chartreuse;
+}
+.playcirclePause8 {
+    right: 3%;
+    bottom: 10%;
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    border-radius: 1000px;
+    animation-name: playcircle;
+    background-position: center;
+    animation-duration: 0.50s;
+    box-shadow: 2px 0px 10px 2px gray;
+    background-repeat: no-repeat;
+    background-size: calc(58%);
+    cursor: pointer;
+    display: none;
+    background-image: url(circle-play-regular\ \(1\).svg);
+    animation-iteration-count: calc(1);
+    background-color: chartreuse;
+}
+
+
+.song9 {
+    cursor: pointer;
+    width: 126.22px;
+    height: 126.22px;
+    border-radius: 6pt;
+    background-size: cover;
+    background-image: url(imgaes/Saree\ Ke\ Fall\ Sa\ R...\ Rajkumar\ 128\ Kbps.png);
+
+}
+.player9 {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 100px;
+    filter:drop-shadow(100);
+    background-repeat: no-repeat;
+    background-color: chartreuse;
+    background-image: url(circle-play-regular\ \(1\).svg);
+
+}
+.pauser9 {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 100px;
+    filter:drop-shadow(100);
+    background-repeat: no-repeat;
+    background-color: chartreuse;
+    background-image: url(circle-pause-regular.svg);
+
+}
+.playcircle9 {
+    right: 3%;
+    bottom: 10%;
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    border-radius: 1000px;
+    animation-name: playcircle;
+    background-position: center;
+    animation-duration: 0.50s;
+    background-repeat: no-repeat;
+    background-size: calc(58%);
+    cursor: pointer;
+    display: none;
+    box-shadow: 2px 0px 10px 2px gray;
+    background-image: url(circle-pause-regular.svg);
+    animation-iteration-count: calc(1);
+    background-color: chartreuse;
+}
+.playcirclePause9 {
+    right: 3%;
+    bottom: 10%;
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    border-radius: 1000px;
+    animation-name: playcircle;
+    background-position: center;
+    animation-duration: 0.50s;
+    box-shadow: 2px 0px 10px 2px gray;
+    background-repeat: no-repeat;
+    background-size: calc(58%);
+    cursor: pointer;
+    display: none;
+    background-image: url(circle-play-regular\ \(1\).svg);
+    animation-iteration-count: calc(1);
+    background-color: chartreuse;
+}
+
+
+.song10 {
+    cursor: pointer;
+    width: 126.22px;
+    height: 126.22px;
+    border-radius: 6pt;
+    background-size: cover;
+    background-image: url(imgaes/Tere\ Mast\ Mast\ Do\ Nain\ Dabangg\ 128\ Kbps.png);
+
+}
+.player10 {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 100px;
+    filter:drop-shadow(100);
+    background-repeat: no-repeat;
+    background-color: chartreuse;
+    background-image: url(circle-play-regular\ \(1\).svg);
+
+}
+.pauser10 {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 100px;
+    filter:drop-shadow(100);
+    background-repeat: no-repeat;
+    background-color: chartreuse;
+    background-image: url(circle-pause-regular.svg);
+
+}
+.playcircle10 {
+    right: 3%;
+    bottom: 10%;
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    border-radius: 1000px;
+    animation-name: playcircle;
+    background-position: center;
+    animation-duration: 0.50s;
+    background-repeat: no-repeat;
+    background-size: calc(58%);
+    cursor: pointer;
+    display: none;
+    box-shadow: 2px 0px 10px 2px gray;
+    background-image: url(circle-pause-regular.svg);
+    animation-iteration-count: calc(1);
+    background-color: chartreuse;
+}
+.playcirclePause10 {
+    right: 3%;
+    bottom: 10%;
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    border-radius: 1000px;
+    animation-name: playcircle;
+    background-position: center;
+    animation-duration: 0.50s;
+    box-shadow: 2px 0px 10px 2px gray;
+    background-repeat: no-repeat;
+    background-size: calc(58%);
+    cursor: pointer;
+    display: none;
+    background-image: url(circle-play-regular\ \(1\).svg);
+    animation-iteration-count: calc(1);
+    background-color: chartreuse;
+}
+
+
+.song11 {
+    cursor: pointer;
+    width: 126.22px;
+    height: 126.22px;
+    border-radius: 6pt;
+    background-size: cover;
+    background-image: url(imgaes/Deewane\ Hum\ Nahi\ Hote\(Selfiee\)\(PagalWorld.com.pe\).png);
+
+}
+.player11 {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 100px;
+    filter:drop-shadow(100);
+    background-repeat: no-repeat;
+    background-color: chartreuse;
+    background-image: url(circle-play-regular\ \(1\).svg);
+
+}
+.pauser11 {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 100px;
+    filter:drop-shadow(100);
+    background-repeat: no-repeat;
+    background-color: chartreuse;
+    background-image: url(circle-pause-regular.svg);
+
+}
+.playcircle11 {
+    right: 3%;
+    bottom: 10%;
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    border-radius: 1000px;
+    animation-name: playcircle;
+    background-position: center;
+    animation-duration: 0.50s;
+    background-repeat: no-repeat;
+    background-size: calc(58%);
+    cursor: pointer;
+    display: none;
+    box-shadow: 2px 0px 10px 2px gray;
+    background-image: url(circle-pause-regular.svg);
+    animation-iteration-count: calc(1);
+    background-color: chartreuse;
+}
+.playcirclePause11 {
+    right: 3%;
+    bottom: 10%;
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    border-radius: 1000px;
+    animation-name: playcircle;
+    background-position: center;
+    animation-duration: 0.50s;
+    box-shadow: 2px 0px 10px 2px gray;
+    background-repeat: no-repeat;
+    background-size: calc(58%);
+    cursor: pointer;
+    display: none;
+    background-image: url(circle-play-regular\ \(1\).svg);
+    animation-iteration-count: calc(1);
+    background-color: chartreuse;
+}
+
+
+.song12 {
+    cursor: pointer;
+    width: 126.22px;
+    height: 126.22px;
+    border-radius: 6pt;
+    background-size: cover;
+    background-image: url(imgaes/Gotilo\(PaglaSongs\).png);
+
+}
+.player12 {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 100px;
+    filter:drop-shadow(100);
+    background-repeat: no-repeat;
+    background-color: chartreuse;
+    background-image: url(circle-play-regular\ \(1\).svg);
+
+}
+.pauser12 {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 100px;
+    filter:drop-shadow(100);
+    background-repeat: no-repeat;
+    background-color: chartreuse;
+    background-image: url(circle-pause-regular.svg);
+
+}
+.playcircle12 {
+    right: 3%;
+    bottom: 10%;
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    border-radius: 1000px;
+    animation-name: playcircle;
+    background-position: center;
+    animation-duration: 0.50s;
+    background-repeat: no-repeat;
+    background-size: calc(58%);
+    cursor: pointer;
+    display: none;
+    box-shadow: 2px 0px 10px 2px gray;
+    background-image: url(circle-pause-regular.svg);
+    animation-iteration-count: calc(1);
+    background-color: chartreuse;
+}
+.playcirclePause12 {
+    right: 3%;
+    bottom: 10%;
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    border-radius: 1000px;
+    animation-name: playcircle;
+    background-position: center;
+    animation-duration: 0.50s;
+    box-shadow: 2px 0px 10px 2px gray;
+    background-repeat: no-repeat;
+    background-size: calc(58%);
+    cursor: pointer;
+    display: none;
+    background-image: url(circle-play-regular\ \(1\).svg);
+    animation-iteration-count: calc(1);
+    background-color: chartreuse;
+}
+
+
+.song13 {
+    cursor: pointer;
+    width: 126.22px;
+    height: 126.22px;
+    border-radius: 6pt;
+    background-size: cover;
+    background-image: url(imgaes/Tere\ Naam\ Alka\ Yagnik\ 128\ Kbps.png);
+
+}
+.player13 {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 100px;
+    filter:drop-shadow(100);
+    background-repeat: no-repeat;
+    background-color: chartreuse;
+    background-image: url(circle-play-regular\ \(1\).svg);
+
+}
+.pauser13 {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 100px;
+    filter:drop-shadow(100);
+    background-repeat: no-repeat;
+    background-color: chartreuse;
+    background-image: url(circle-pause-regular.svg);
+
+}
+.playcircle13 {
+    right: 3%;
+    bottom: 10%;
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    border-radius: 1000px;
+    animation-name: playcircle;
+    background-position: center;
+    animation-duration: 0.50s;
+    background-repeat: no-repeat;
+    background-size: calc(58%);
+    cursor: pointer;
+    display: none;
+    box-shadow: 2px 0px 10px 2px gray;
+    background-image: url(circle-pause-regular.svg);
+    animation-iteration-count: calc(1);
+    background-color: chartreuse;
+}
+.playcirclePause13 {
+    right: 3%;
+    bottom: 10%;
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    border-radius: 1000px;
+    animation-name: playcircle;
+    background-position: center;
+    animation-duration: 0.50s;
+    box-shadow: 2px 0px 10px 2px gray;
+    background-repeat: no-repeat;
+    background-size: calc(58%);
+    cursor: pointer;
+    display: none;
+    background-image: url(circle-play-regular\ \(1\).svg);
+    animation-iteration-count: calc(1);
+    background-color: chartreuse;
+}
+
+
+.song14 {
+    cursor: pointer;
+    width: 126.22px;
+    height: 126.22px;
+    border-radius: 6pt;
+    background-size: cover;
+    background-image: url(imgaes/Kyaa\ Dil\ Ne\ Kahaa\ Alka\ Yagnik\ 128\ Kbps.png);
+
+}
+.player14 {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 100px;
+    filter:drop-shadow(100);
+    background-repeat: no-repeat;
+    background-color: chartreuse;
+    background-image: url(circle-play-regular\ \(1\).svg);
+
+}
+.pauser14 {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 100px;
+    filter:drop-shadow(100);
+    background-repeat: no-repeat;
+    background-color: chartreuse;
+    background-image: url(circle-pause-regular.svg);
+
+}
+.playcircle14 {
+    right: 3%;
+    bottom: 10%;
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    border-radius: 1000px;
+    animation-name: playcircle;
+    background-position: center;
+    animation-duration: 0.50s;
+    background-repeat: no-repeat;
+    background-size: calc(58%);
+    cursor: pointer;
+    display: none;
+    box-shadow: 2px 0px 10px 2px gray;
+    background-image: url(circle-pause-regular.svg);
+    animation-iteration-count: calc(1);
+    background-color: chartreuse;
+}
+.playcirclePause14 {
+    right: 3%;
+    bottom: 10%;
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    border-radius: 1000px;
+    animation-name: playcircle;
+    background-position: center;
+    animation-duration: 0.50s;
+    box-shadow: 2px 0px 10px 2px gray;
+    background-repeat: no-repeat;
+    background-size: calc(58%);
+    cursor: pointer;
+    display: none;
+    background-image: url(circle-play-regular\ \(1\).svg);
+    animation-iteration-count: calc(1);
+    background-color: chartreuse;
+}
+
+
+.song15 {
+    cursor: pointer;
+    width: 126.22px;
+    height: 126.22px;
+    border-radius: 6pt;
+    background-size: cover;
+    background-image: url(imgaes/Milenge\ Milenge\,\ Ver.\ 1\ Alka\ Yagnik\ 128\ Kbps.png);
+
+}
+.player15 {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 100px;
+    filter:drop-shadow(100);
+    background-repeat: no-repeat;
+    background-color: chartreuse;
+    background-image: url(circle-play-regular\ \(1\).svg);
+
+}
+.pauser15 {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 100px;
+    filter:drop-shadow(100);
+    background-repeat: no-repeat;
+    background-color: chartreuse;
+    background-image: url(circle-pause-regular.svg);
+
+}
+.playcircle15 {
+    right: 3%;
+    bottom: 10%;
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    border-radius: 1000px;
+    animation-name: playcircle;
+    background-position: center;
+    animation-duration: 0.50s;
+    background-repeat: no-repeat;
+    background-size: calc(58%);
+    cursor: pointer;
+    display: none;
+    box-shadow: 2px 0px 10px 2px gray;
+    background-image: url(circle-pause-regular.svg);
+    animation-iteration-count: calc(1);
+    background-color: chartreuse;
+}
+.playcirclePause15 {
+    right: 3%;
+    bottom: 10%;
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    border-radius: 1000px;
+    animation-name: playcircle;
+    background-position: center;
+    animation-duration: 0.50s;
+    box-shadow: 2px 0px 10px 2px gray;
+    background-repeat: no-repeat;
+    background-size: calc(58%);
+    cursor: pointer;
+    display: none;
+    background-image: url(circle-play-regular\ \(1\).svg);
+    animation-iteration-count: calc(1);
+    background-color: chartreuse;
+}
+
+
+.song16 {
+    cursor: pointer;
+    width: 126.22px;
+    height: 126.22px;
+    border-radius: 6pt;
+    background-size: cover;
+    background-image: url(imgaes/Ae-Dil-Hai-Mushkil-2.0---RCR\(PagalWorldl\).png);
+
+}
+.player16 {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 100px;
+    filter:drop-shadow(100);
+    background-repeat: no-repeat;
+    background-color: chartreuse;
+    background-image: url(circle-play-regular\ \(1\).svg);
+
+}
+.pauser16 {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 100px;
+    filter:drop-shadow(100);
+    background-repeat: no-repeat;
+    background-color: chartreuse;
+    background-image: url(circle-pause-regular.svg);
+
+}
+.playcircle16 {
+    right: 3%;
+    bottom: 10%;
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    border-radius: 1000px;
+    animation-name: playcircle;
+    background-position: center;
+    animation-duration: 0.50s;
+    background-repeat: no-repeat;
+    background-size: calc(58%);
+    cursor: pointer;
+    display: none;
+    box-shadow: 2px 0px 10px 2px gray;
+    background-image: url(circle-pause-regular.svg);
+    animation-iteration-count: calc(1);
+    background-color: chartreuse;
+}
+.playcirclePause16 {
+    right: 3%;
+    bottom: 10%;
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    border-radius: 1000px;
+    animation-name: playcircle;
+    background-position: center;
+    animation-duration: 0.50s;
+    box-shadow: 2px 0px 10px 2px gray;
+    background-repeat: no-repeat;
+    background-size: calc(58%);
+    cursor: pointer;
+    display: none;
+    background-image: url(circle-play-regular\ \(1\).svg);
+    animation-iteration-count: calc(1);
+    background-color: chartreuse;
+}
+
+
+.song17 {
+    cursor: pointer;
+    width: 126.22px;
+    height: 126.22px;
+    border-radius: 6pt;
+    background-size: cover;
+    background-image: url(imgaes/Zaroori\ Tha.png);
+
+}
+.player17 {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 100px;
+    filter:drop-shadow(100);
+    background-repeat: no-repeat;
+    background-color: chartreuse;
+    background-image: url(circle-play-regular\ \(1\).svg);
+
+}
+.pauser17 {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 100px;
+    filter:drop-shadow(100);
+    background-repeat: no-repeat;
+    background-color: chartreuse;
+    background-image: url(circle-pause-regular.svg);
+
+}
+.playcircle17 {
+    right: 3%;
+    bottom: 10%;
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    border-radius: 1000px;
+    animation-name: playcircle;
+    background-position: center;
+    animation-duration: 0.50s;
+    background-repeat: no-repeat;
+    background-size: calc(58%);
+    cursor: pointer;
+    display: none;
+    box-shadow: 2px 0px 10px 2px gray;
+    background-image: url(circle-pause-regular.svg);
+    animation-iteration-count: calc(1);
+    background-color: chartreuse;
+}
+.playcirclePause17 {
+    right: 3%;
+    bottom: 10%;
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    border-radius: 1000px;
+    animation-name: playcircle;
+    background-position: center;
+    animation-duration: 0.50s;
+    box-shadow: 2px 0px 10px 2px gray;
+    background-repeat: no-repeat;
+    background-size: calc(58%);
+    cursor: pointer;
+    display: none;
+    background-image: url(circle-play-regular\ \(1\).svg);
+    animation-iteration-count: calc(1);
+    background-color: chartreuse;
+}
+
+
+.song18 {
+    cursor: pointer;
+    width: 126.22px;
+    height: 126.22px;
+    border-radius: 6pt;
+    background-size: cover;
+    background-image: url(imgaes/Aap\ Ki\ Khatir\ Himesh\ Reshammiya\ 128\ Kbps.png);
+
+}
+.player18 {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 100px;
+    filter:drop-shadow(100);
+    background-repeat: no-repeat;
+    background-color: chartreuse;
+    background-image: url(circle-play-regular\ \(1\).svg);
+
+}
+.pauser18 {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 100px;
+    filter:drop-shadow(100);
+    background-repeat: no-repeat;
+    background-color: chartreuse;
+    background-image: url(circle-pause-regular.svg);
+
+}
+.playcircle18 {
+    right: 3%;
+    bottom: 10%;
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    border-radius: 1000px;
+    animation-name: playcircle;
+    background-position: center;
+    animation-duration: 0.50s;
+    background-repeat: no-repeat;
+    background-size: calc(58%);
+    cursor: pointer;
+    display: none;
+    box-shadow: 2px 0px 10px 2px gray;
+    background-image: url(circle-pause-regular.svg);
+    animation-iteration-count: calc(1);
+    background-color: chartreuse;
+}
+.playcirclePause18 {
+    right: 3%;
+    bottom: 10%;
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    border-radius: 1000px;
+    animation-name: playcircle;
+    background-position: center;
+    animation-duration: 0.50s;
+    box-shadow: 2px 0px 10px 2px gray;
+    background-repeat: no-repeat;
+    background-size: calc(58%);
+    cursor: pointer;
+    display: none;
+    background-image: url(circle-play-regular\ \(1\).svg);
+    animation-iteration-count: calc(1);
+    background-color: chartreuse;
+}
+
+
+.song19 {
+    cursor: pointer;
+    width: 126.22px;
+    height: 126.22px;
+    border-radius: 6pt;
+    background-size: cover;
+    background-image: url(imgaes/Banjaara\(PaglaSongs\).png);
+
+}
+.player19 {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 100px;
+    filter:drop-shadow(100);
+    background-repeat: no-repeat;
+    background-color: chartreuse;
+    background-image: url(circle-play-regular\ \(1\).svg);
+
+}
+.pauser19 {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 100px;
+    filter:drop-shadow(100);
+    background-repeat: no-repeat;
+    background-color: chartreuse;
+    background-image: url(circle-pause-regular.svg);
+
+}
+.playcircle19 {
+    right: 3%;
+    bottom: 10%;
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    border-radius: 1000px;
+    animation-name: playcircle;
+    background-position: center;
+    animation-duration: 0.50s;
+    background-repeat: no-repeat;
+    background-size: calc(58%);
+    cursor: pointer;
+    display: none;
+    box-shadow: 2px 0px 10px 2px gray;
+    background-image: url(circle-pause-regular.svg);
+    animation-iteration-count: calc(1);
+    background-color: chartreuse;
+}
+.playcirclePause19 {
+    right: 3%;
+    bottom: 10%;
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    border-radius: 1000px;
+    animation-name: playcircle;
+    background-position: center;
+    animation-duration: 0.50s;
+    box-shadow: 2px 0px 10px 2px gray;
+    background-repeat: no-repeat;
+    background-size: calc(58%);
+    cursor: pointer;
+    display: none;
+    background-image: url(circle-play-regular\ \(1\).svg);
+    animation-iteration-count: calc(1);
+    background-color: chartreuse;
+}
+
+
+.song20{
+    cursor: pointer;
+    width: 126.22px;
+    height: 126.22px;
+    border-radius: 6pt;
+    background-size: cover;
+    background-image: url(imgaes/Mohabbat\ Dil\ Ka\ Sakoon_192\(Ghantalele.com\).png);
+
+}
+.player20{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 100px;
+    filter:drop-shadow(100);
+    background-repeat: no-repeat;
+    background-color: chartreuse;
+    background-image: url(circle-play-regular\ \(1\).svg);
+
+}
+.pauser20{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 100px;
+    filter:drop-shadow(100);
+    background-repeat: no-repeat;
+    background-color: chartreuse;
+    background-image: url(circle-pause-regular.svg);
+
+}
+.playcircle20{
+    right: 3%;
+    bottom: 10%;
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    border-radius: 1000px;
+    animation-name: playcircle;
+    background-position: center;
+    animation-duration: 0.50s;
+    background-repeat: no-repeat;
+    background-size: calc(58%);
+    cursor: pointer;
+    display: none;
+    box-shadow: 2px 0px 10px 2px gray;
+    background-image: url(circle-pause-regular.svg);
+    animation-iteration-count: calc(1);
+    background-color: chartreuse;
+}
+.playcirclePause20{
+    right: 3%;
+    bottom: 10%;
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    border-radius: 1000px;
+    animation-name: playcircle;
+    background-position: center;
+    animation-duration: 0.50s;
+    box-shadow: 2px 0px 10px 2px gray;
+    background-repeat: no-repeat;
+    background-size: calc(58%);
+    cursor: pointer;
+    display: none;
+    background-image: url(circle-play-regular\ \(1\).svg);
+    animation-iteration-count: calc(1);
+    background-color: chartreuse;
+}
+
+
+.song21{
+    cursor: pointer;
+    width: 126.22px;
+    height: 126.22px;
+    border-radius: 6pt;
+    background-size: cover;
+    background-image: url(imgaes/Meri\ Ho\ Ja\ Sachet\ Tandon\ 128\ Kbps.png);
+
+}
+.player21{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 100px;
+    filter:drop-shadow(100);
+    background-repeat: no-repeat;
+    background-color: chartreuse;
+    background-image: url(circle-play-regular\ \(1\).svg);
+
+}
+.pauser21{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 100px;
+    filter:drop-shadow(100);
+    background-repeat: no-repeat;
+    background-color: chartreuse;
+    background-image: url(circle-pause-regular.svg);
+
+}
+.playcircle21{
+    right: 3%;
+    bottom: 10%;
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    border-radius: 1000px;
+    animation-name: playcircle;
+    background-position: center;
+    animation-duration: 0.50s;
+    background-repeat: no-repeat;
+    background-size: calc(58%);
+    cursor: pointer;
+    display: none;
+    box-shadow: 2px 0px 10px 2px gray;
+    background-image: url(circle-pause-regular.svg);
+    animation-iteration-count: calc(1);
+    background-color: chartreuse;
+}
+.playcirclePause21{
+    right: 3%;
+    bottom: 10%;
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    border-radius: 1000px;
+    animation-name: playcircle;
+    background-position: center;
+    animation-duration: 0.50s;
+    box-shadow: 2px 0px 10px 2px gray;
+    background-repeat: no-repeat;
+    background-size: calc(58%);
+    cursor: pointer;
+    display: none;
+    background-image: url(circle-play-regular\ \(1\).svg);
+    animation-iteration-count: calc(1);
+    background-color: chartreuse;
+}
+
+
+.song22{
+    cursor: pointer;
+    width: 126.22px;
+    height: 126.22px;
+    border-radius: 6pt;
+    background-size: cover;
+    background-image: url(imgaes/Dahi-Shakkar\(PaglaSongs\).png);
+
+}
+.player22{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 100px;
+    filter:drop-shadow(100);
+    background-repeat: no-repeat;
+    background-color: chartreuse;
+    background-image: url(circle-play-regular\ \(1\).svg);
+
+}
+.pauser22{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 100px;
+    filter:drop-shadow(100);
+    background-repeat: no-repeat;
+    background-color: chartreuse;
+    background-image: url(circle-pause-regular.svg);
+
+}
+.playcircle22{
+    right: 3%;
+    bottom: 10%;
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    border-radius: 1000px;
+    animation-name: playcircle;
+    background-position: center;
+    animation-duration: 0.50s;
+    background-repeat: no-repeat;
+    background-size: calc(58%);
+    cursor: pointer;
+    display: none;
+    box-shadow: 2px 0px 10px 2px gray;
+    background-image: url(circle-pause-regular.svg);
+    animation-iteration-count: calc(1);
+    background-color: chartreuse;
+}
+.playcirclePause22{
+    right: 3%;
+    bottom: 10%;
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    border-radius: 1000px;
+    animation-name: playcircle;
+    background-position: center;
+    animation-duration: 0.50s;
+    box-shadow: 2px 0px 10px 2px gray;
+    background-repeat: no-repeat;
+    background-size: calc(58%);
+    cursor: pointer;
+    display: none;
+    background-image: url(circle-play-regular\ \(1\).svg);
+    animation-iteration-count: calc(1);
+    background-color: chartreuse;
+}
+
+
+.song23{
+    cursor: pointer;
+    width: 126.22px;
+    height: 126.22px;
+    border-radius: 6pt;
+    background-size: cover;
+    background-image: url(imgaes/Tu\ Hi\ Mera\ Dil\ Hai\ Soumajit\ Biswas\ 128\ Kbps.png);
+
+}
+.player23{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 100px;
+    filter:drop-shadow(100);
+    background-repeat: no-repeat;
+    background-color: chartreuse;
+    background-image: url(circle-play-regular\ \(1\).svg);
+
+}
+.pauser23{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 100px;
+    filter:drop-shadow(100);
+    background-repeat: no-repeat;
+    background-color: chartreuse;
+    background-image: url(circle-pause-regular.svg);
+
+}
+.playcircle23{
+    right: 3%;
+    bottom: 10%;
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    border-radius: 1000px;
+    animation-name: playcircle;
+    background-position: center;
+    animation-duration: 0.50s;
+    background-repeat: no-repeat;
+    background-size: calc(58%);
+    cursor: pointer;
+    display: none;
+    box-shadow: 2px 0px 10px 2px gray;
+    background-image: url(circle-pause-regular.svg);
+    animation-iteration-count: calc(1);
+    background-color: chartreuse;
+}
+.playcirclePause23{
+    right: 3%;
+    bottom: 10%;
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    border-radius: 1000px;
+    animation-name: playcircle;
+    background-position: center;
+    animation-duration: 0.50s;
+    box-shadow: 2px 0px 10px 2px gray;
+    background-repeat: no-repeat;
+    background-size: calc(58%);
+    cursor: pointer;
+    display: none;
+    background-image: url(circle-play-regular\ \(1\).svg);
+    animation-iteration-count: calc(1);
+    background-color: chartreuse;
+}
+
+
+.song24{
+    cursor: pointer;
+    width: 126.22px;
+    height: 126.22px;
+    border-radius: 6pt;
+    background-size: cover;
+    background-image: url(imgaes/Saure\ Ghar\ Yaariyan\ 2\ 128\ Kbps.png);
+
+}
+.player24{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 100px;
+    filter:drop-shadow(100);
+    background-repeat: no-repeat;
+    background-color: chartreuse;
+    background-image: url(circle-play-regular\ \(1\).svg);
+
+}
+.pauser24{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 100px;
+    filter:drop-shadow(100);
+    background-repeat: no-repeat;
+    background-color: chartreuse;
+    background-image: url(circle-pause-regular.svg);
+
+}
+.playcircle24{
+    right: 3%;
+    bottom: 10%;
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    border-radius: 1000px;
+    animation-name: playcircle;
+    background-position: center;
+    animation-duration: 0.50s;
+    background-repeat: no-repeat;
+    background-size: calc(58%);
+    cursor: pointer;
+    display: none;
+    box-shadow: 2px 0px 10px 2px gray;
+    background-image: url(circle-pause-regular.svg);
+    animation-iteration-count: calc(1);
+    background-color: chartreuse;
+}
+.playcirclePause24{
+    right: 3%;
+    bottom: 10%;
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    border-radius: 1000px;
+    animation-name: playcircle;
+    background-position: center;
+    animation-duration: 0.50s;
+    box-shadow: 2px 0px 10px 2px gray;
+    background-repeat: no-repeat;
+    background-size: calc(58%);
+    cursor: pointer;
+    display: none;
+    background-image: url(circle-play-regular\ \(1\).svg);
+    animation-iteration-count: calc(1);
+    background-color: chartreuse;
+}
+
+
+.song25{
+    cursor: pointer;
+    width: 126.22px;
+    height: 126.22px;
+    border-radius: 6pt;
+    background-size: cover;
+    background-image: url(imgaes/Teri-Yaadon-Se---Salman-Ali\(PaglaSongs\).png);
+
+}
+.player25{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 100px;
+    filter:drop-shadow(100);
+    background-repeat: no-repeat;
+    background-color: chartreuse;
+    background-image: url(circle-play-regular\ \(1\).svg);
+
+}
+.pauser25{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 100px;
+    filter:drop-shadow(100);
+    background-repeat: no-repeat;
+    background-color: chartreuse;
+    background-image: url(circle-pause-regular.svg);
+
+}
+.playcircle25{
+    right: 3%;
+    bottom: 10%;
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    border-radius: 1000px;
+    animation-name: playcircle;
+    background-position: center;
+    animation-duration: 0.50s;
+    background-repeat: no-repeat;
+    background-size: calc(58%);
+    cursor: pointer;
+    display: none;
+    box-shadow: 2px 0px 10px 2px gray;
+    background-image: url(circle-pause-regular.svg);
+    animation-iteration-count: calc(1);
+    background-color: chartreuse;
+}
+.playcirclePause25{
+    right: 3%;
+    bottom: 10%;
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    border-radius: 1000px;
+    animation-name: playcircle;
+    background-position: center;
+    animation-duration: 0.50s;
+    box-shadow: 2px 0px 10px 2px gray;
+    background-repeat: no-repeat;
+    background-size: calc(58%);
+    cursor: pointer;
+    display: none;
+    background-image: url(circle-play-regular\ \(1\).svg);
+    animation-iteration-count: calc(1);
+    background-color: chartreuse;
+}
+
+
+.song26{
+    cursor: pointer;
+    width: 126.22px;
+    height: 126.22px;
+    border-radius: 6pt;
+    background-size: cover;
+    background-image: url(imgaes/Main-Dil-Ko-Samjha-Lunga\(PaglaSongs\).png);
+
+}
+.player26{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 100px;
+    filter:drop-shadow(100);
+    background-repeat: no-repeat;
+    background-color: chartreuse;
+    background-image: url(circle-play-regular\ \(1\).svg);
+
+}
+.pauser26{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 100px;
+    filter:drop-shadow(100);
+    background-repeat: no-repeat;
+    background-color: chartreuse;
+    background-image: url(circle-pause-regular.svg);
+
+}
+.playcircle26{
+    right: 3%;
+    bottom: 10%;
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    border-radius: 1000px;
+    animation-name: playcircle;
+    background-position: center;
+    animation-duration: 0.50s;
+    background-repeat: no-repeat;
+    background-size: calc(58%);
+    cursor: pointer;
+    display: none;
+    box-shadow: 2px 0px 10px 2px gray;
+    background-image: url(circle-pause-regular.svg);
+    animation-iteration-count: calc(1);
+    background-color: chartreuse;
+}
+.playcirclePause26{
+    right: 3%;
+    bottom: 10%;
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    border-radius: 1000px;
+    animation-name: playcircle;
+    background-position: center;
+    animation-duration: 0.50s;
+    box-shadow: 2px 0px 10px 2px gray;
+    background-repeat: no-repeat;
+    background-size: calc(58%);
+    cursor: pointer;
+    display: none;
+    background-image: url(circle-play-regular\ \(1\).svg);
+    animation-iteration-count: calc(1);
+    background-color: chartreuse;
+}
+
+
+.song27{
+    cursor: pointer;
+    width: 126.22px;
+    height: 126.22px;
+    border-radius: 6pt;
+    background-size: cover;
+    background-image: url(imgaes/Piya\ Dream\ Girl\ 2\ 128\ Kbps.png);
+
+}
+.player27{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 100px;
+    filter:drop-shadow(100);
+    background-repeat: no-repeat;
+    background-color: chartreuse;
+    background-image: url(circle-play-regular\ \(1\).svg);
+
+}
+.pauser27{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 100px;
+    filter:drop-shadow(100);
+    background-repeat: no-repeat;
+    background-color: chartreuse;
+    background-image: url(circle-pause-regular.svg);
+
+}
+.playcircle27{
+    right: 3%;
+    bottom: 10%;
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    border-radius: 1000px;
+    animation-name: playcircle;
+    background-position: center;
+    animation-duration: 0.50s;
+    background-repeat: no-repeat;
+    background-size: calc(58%);
+    cursor: pointer;
+    display: none;
+    box-shadow: 2px 0px 10px 2px gray;
+    background-image: url(circle-pause-regular.svg);
+    animation-iteration-count: calc(1);
+    background-color: chartreuse;
+}
+.playcirclePause27{
+    right: 3%;
+    bottom: 10%;
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    border-radius: 1000px;
+    animation-name: playcircle;
+    background-position: center;
+    animation-duration: 0.50s;
+    box-shadow: 2px 0px 10px 2px gray;
+    background-repeat: no-repeat;
+    background-size: calc(58%);
+    cursor: pointer;
+    display: none;
+    background-image: url(circle-play-regular\ \(1\).svg);
+    animation-iteration-count: calc(1);
+    background-color: chartreuse;
+}
+
+
+.song28{
+    cursor: pointer;
+    width: 126.22px;
+    height: 126.22px;
+    border-radius: 6pt;
+    background-size: cover;
+    background-image: url(imgaes/Paagla_1.png);
+
+}
+.player28{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 100px;
+    filter:drop-shadow(100);
+    background-repeat: no-repeat;
+    background-color: chartreuse;
+    background-image: url(circle-play-regular\ \(1\).svg);
+
+}
+.pauser28{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 100px;
+    filter:drop-shadow(100);
+    background-repeat: no-repeat;
+    background-color: chartreuse;
+    background-image: url(circle-pause-regular.svg);
+
+}
+.playcircle28{
+    right: 3%;
+    bottom: 10%;
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    border-radius: 1000px;
+    animation-name: playcircle;
+    background-position: center;
+    animation-duration: 0.50s;
+    background-repeat: no-repeat;
+    background-size: calc(58%);
+    cursor: pointer;
+    display: none;
+    box-shadow: 2px 0px 10px 2px gray;
+    background-image: url(circle-pause-regular.svg);
+    animation-iteration-count: calc(1);
+    background-color: chartreuse;
+}
+.playcirclePause28{
+    right: 3%;
+    bottom: 10%;
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    border-radius: 1000px;
+    animation-name: playcircle;
+    background-position: center;
+    animation-duration: 0.50s;
+    box-shadow: 2px 0px 10px 2px gray;
+    background-repeat: no-repeat;
+    background-size: calc(58%);
+    cursor: pointer;
+    display: none;
+    background-image: url(circle-play-regular\ \(1\).svg);
+    animation-iteration-count: calc(1);
+    background-color: chartreuse;
+}
+
+
+.song29{
+    cursor: pointer;
+    width: 126.22px;
+    height: 126.22px;
+    border-radius: 6pt;
+    background-size: cover;
+    background-image: url(imgaes/Jiyaa-Laage-Naa\(PaglaSongs\).png);
+
+}
+.player29{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 100px;
+    filter:drop-shadow(100);
+    background-repeat: no-repeat;
+    background-color: chartreuse;
+    background-image: url(circle-play-regular\ \(1\).svg);
+
+}
+.pauser29{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 100px;
+    filter:drop-shadow(100);
+    background-repeat: no-repeat;
+    background-color: chartreuse;
+    background-image: url(circle-pause-regular.svg);
+
+}
+.playcircle29{
+    right: 3%;
+    bottom: 10%;
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    border-radius: 1000px;
+    animation-name: playcircle;
+    background-position: center;
+    animation-duration: 0.50s;
+    background-repeat: no-repeat;
+    background-size: calc(58%);
+    cursor: pointer;
+    display: none;
+    box-shadow: 2px 0px 10px 2px gray;
+    background-image: url(circle-pause-regular.svg);
+    animation-iteration-count: calc(1);
+    background-color: chartreuse;
+}
+.playcirclePause29{
+    right: 3%;
+    bottom: 10%;
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    border-radius: 1000px;
+    animation-name: playcircle;
+    background-position: center;
+    animation-duration: 0.50s;
+    box-shadow: 2px 0px 10px 2px gray;
+    background-repeat: no-repeat;
+    background-size: calc(58%);
+    cursor: pointer;
+    display: none;
+    background-image: url(circle-play-regular\ \(1\).svg);
+    animation-iteration-count: calc(1);
+    background-color: chartreuse;
+}
+
+
+.song30{
+    cursor: pointer;
+    width: 126.22px;
+    height: 126.22px;
+    border-radius: 6pt;
+    background-size: cover;
+    background-image: url(imgaes/Dil\ Hai\ Tumhaara\ Alka\ Yagnik\ 128\ Kbps.jpeg);
+
+}
+.player30{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 100px;
+    filter:drop-shadow(100);
+    background-repeat: no-repeat;
+    background-color: chartreuse;
+    background-image: url(circle-play-regular\ \(1\).svg);
+
+}
+.pauser30{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 100px;
+    filter:drop-shadow(100);
+    background-repeat: no-repeat;
+    background-color: chartreuse;
+    background-image: url(circle-pause-regular.svg);
+
+}
+.playcircle30{
+    right: 3%;
+    bottom: 10%;
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    border-radius: 1000px;
+    animation-name: playcircle;
+    background-position: center;
+    animation-duration: 0.50s;
+    background-repeat: no-repeat;
+    background-size: calc(58%);
+    cursor: pointer;
+    display: none;
+    box-shadow: 2px 0px 10px 2px gray;
+    background-image: url(circle-pause-regular.svg);
+    animation-iteration-count: calc(1);
+    background-color: chartreuse;
+}
+.playcirclePause30{
+    right: 3%;
+    bottom: 10%;
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    border-radius: 1000px;
+    animation-name: playcircle;
+    background-position: center;
+    animation-duration: 0.50s;
+    box-shadow: 2px 0px 10px 2px gray;
+    background-repeat: no-repeat;
+    background-size: calc(58%);
+    cursor: pointer;
+    display: none;
+    background-image: url(circle-play-regular\ \(1\).svg);
+    animation-iteration-count: calc(1);
+    background-color: chartreuse;
+}
+
+.song31{
+    cursor: pointer;
+    width: 126.22px;
+    height: 126.22px;
+    border-radius: 6pt;
+    background-size: cover;
+    background-image: url(imgaes/Kisise\ Tum\ Pyar\ Karo\ Andaaz\ 2003\ 128\ Kbps.png);
+
+}
+.player31{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 100px;
+    filter:drop-shadow(100);
+    background-repeat: no-repeat;
+    background-color: chartreuse;
+    background-image: url(circle-play-regular\ \(1\).svg);
+
+}
+.pauser31{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 100px;
+    filter:drop-shadow(100);
+    background-repeat: no-repeat;
+    background-color: chartreuse;
+    background-image: url(circle-pause-regular.svg);
+
+}
+.playcircle31{
+    right: 3%;
+    bottom: 10%;
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    border-radius: 1000px;
+    animation-name: playcircle;
+    background-position: center;
+    animation-duration: 0.50s;
+    background-repeat: no-repeat;
+    background-size: calc(58%);
+    cursor: pointer;
+    display: none;
+    box-shadow: 2px 0px 10px 2px gray;
+    background-image: url(circle-pause-regular.svg);
+    animation-iteration-count: calc(1);
+    background-color: chartreuse;
+}
+.playcirclePause31{
+    right: 3%;
+    bottom: 10%;
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    border-radius: 1000px;
+    animation-name: playcircle;
+    background-position: center;
+    animation-duration: 0.50s;
+    box-shadow: 2px 0px 10px 2px gray;
+    background-repeat: no-repeat;
+    background-size: calc(58%);
+    cursor: pointer;
+    display: none;
+    background-image: url(circle-play-regular\ \(1\).svg);
+    animation-iteration-count: calc(1);
+    background-color: chartreuse;
+}
+
+
+.song32{
+    cursor: pointer;
+    width: 126.22px;
+    height: 126.22px;
+    border-radius: 6pt;
+    background-size: cover;
+    background-image: url(imgaes/Ae\ Dil\ Hai\ Mushkil\ Title\ Track\ Pritam\ 128\ Kbps.png);
+
+}
+.player32{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 100px;
+    filter:drop-shadow(100);
+    background-repeat: no-repeat;
+    background-color: chartreuse;
+    background-image: url(circle-play-regular\ \(1\).svg);
+
+}
+.pauser32{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 100px;
+    filter:drop-shadow(100);
+    background-repeat: no-repeat;
+    background-color: chartreuse;
+    background-image: url(circle-pause-regular.svg);
+
+}
+.playcircle32{
+    right: 3%;
+    bottom: 10%;
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    border-radius: 1000px;
+    animation-name: playcircle;
+    background-position: center;
+    animation-duration: 0.50s;
+    background-repeat: no-repeat;
+    background-size: calc(58%);
+    cursor: pointer;
+    display: none;
+    box-shadow: 2px 0px 10px 2px gray;
+    background-image: url(circle-pause-regular.svg);
+    animation-iteration-count: calc(1);
+    background-color: chartreuse;
+}
+.playcirclePause32{
+    right: 3%;
+    bottom: 10%;
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    border-radius: 1000px;
+    animation-name: playcircle;
+    background-position: center;
+    animation-duration: 0.50s;
+    box-shadow: 2px 0px 10px 2px gray;
+    background-repeat: no-repeat;
+    background-size: calc(58%);
+    cursor: pointer;
+    display: none;
+    background-image: url(circle-play-regular\ \(1\).svg);
+    animation-iteration-count: calc(1);
+    background-color: chartreuse;
+}
+/* THE EDN SETUP IMAGE FROM CSS PROPERTEIS */
+
+
+
+/* This is about the spotify and its content */
+.about_spotify{
+    width: 100%;
+    display:flex;
+    margin-top: 50px;
+    align-items: center;
+    height: fit-content;
+    justify-content: center;
+}
+.box{
+    width: 90%;
+    height: fit-content;
+    border-radius: 10px;
+    border: 1px solid gray;
+}
+.content1{
+    width: 90%;
+    padding-left: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.content1 h1{
+    font-size: 1.40em;
+    line-height: 40px;
+}
+.content1 p{
+    font-size: 1em;
+    line-height: 25px;
+    color: rgb(149, 149, 149);
+}
+@media (max-width: 500px) {.content1{padding-left: 20px;}}
+.downloading{
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+    height: fit-content;
+    margin-bottom: 30px;
+    justify-content: center;
+}
+.download{
+    width: 90%;
+    height: 80px;
+    border: 8px;
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    border-radius: 8px;
+    background-color: #21252d;
+    justify-content: space-between;
+}
+.for_logo{
+    width: fit-content;
+    margin-left: 20px;
+    line-height: 25px;
+}
+.apple_googleplay{
+    width: 44%;
+    text-align: center;
+}
+.apple_googleplay img{
+    padding: 10px;
+    cursor: pointer;
+}
+@media (max-width: 844px) {.download{display: block;height: fit-content;}.for_logo{margin-top: 20px;}.apple_googleplay{display: flex;}.apple_googleplay img{padding: 5px;margin-left: 10px;}}
+/* The end of about the spotify and ist contetn */
+
+
+/* THIS IS BOTTOM LANDING PAGE STYLIG CSS */
+#The_footer{
+    width: 90%;
+    height: 80px;
+    margin: 0 auto;
+    min-height: fit-content;
+
+
+    
+}
+
+.social-icons{
+    display: flex;
+    color: white;
+    justify-content: space-evenly;
+}
+
+.social-icons a{
+    margin: 5px;
+    width: 40px;
+    height: 40px;
+    color: white;
+    display: flex;
+    border-radius: 100%;
+    align-items: center;
+    text-decoration: none;
+    justify-content: center;
+    border: 1px solid white;
+    transition-duration: 0.50s;
+
+    
+}
+.social-icons a:hover{
+    border-color: #f98167;
+
+
+}
+.father{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+.link_follow{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    justify-content: space-evenly;
+    border-top: 2px solid #374151;
+    border-bottom: 2px solid #374151;
+
+
+}
+.link_follow ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+
+
+}
+@media (max-width:915px) {
+    .link_follow  li{
+        display: none;
+    }
+    .link_follow{
+        width: 90%;
+        justify-content: center;
+    }
+
+
+}
+.link_follow  li{
+    padding: 10px;
+    border-left: 1px solid #374151;
+
+
+}
+.link_follow  a{
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+
+}
+/* THE END BOTTOM LANDING PAGE STYLING CSS */
+
+
+/* THIS IS HIDDEN CODE OF STYLING CSS PROPERTEIS */
+.sidebar{
+    top: 0;
+    right: 0;
+    width: 20%;
+    z-index: 6;
+    height: 100%;
+    display: none;
+    position: fixed;
+    animation-name: sidebar;
+    animation-duration: 0.50s;
+    background-color: #21252d;
+    
+}
+@keyframes sidebar {
+    0%{
+        width: 0;
+    }
+    
+    100%{
+        width: 20%;
+    }
+}
+@media (max-width:499px) {
+    .sidebar{
+        width: 50%;
+    }
+}
+.over{
+    top: 0;
+    width: 100%;
+    z-index: 5;
+    height: 100%;
+    display: none;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.136);
+}
+.improtant_links_side{
+    width: 100%;
+    display: flex;
+    height: fit-content;
+    justify-content: center;
+}
+.links_name_side{
+    width: 90%;
+    display: flex;
+    height: fit-content;
+    flex-direction: column;
+}
+.links_name_side a{
+    padding: 20px;
+    display: inline-block;
+    text-decoration: none;
+    transition-duration: 0.10s;
+    color: rgb(165, 165, 165);
+    border-bottom: 1px solid gray;
+   
+}
+.links_name_side a:hover{
+    text-decoration: underline;
+
+}
+/* THE END HIDDEN CODE OF STYLING CSS PROPERTEIS */
+
+
+
+
+
+
+/* This is searcinner code of styling css */
+.searchhome{
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    position: absolute;
+    background-color: black;
+    animation-name: searchhome;
+    display: none;
+    animation-duration: 0.50s;
+    animation-iteration-count: calc(1);
+}
+@keyframes searchhome {
+    0%{
+        height: 0;
+        background-color: wheat;
+    }
+    100%{
+        height: 100%;
+    }
+    
+}
+.heading_in{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    position: fixed;
+    top: 0;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    
+}
+.back{
+    width: 20%;
+    height: 50px;
+    font-size: 2.50em;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+
+}
+#back{
+    width: 45px;
+    height: 45px;
+    display: flex;
+    border-radius: 100%;
+    align-items: center;
+    padding-left: 2%;
+    justify-content: center;
+
+}
+#back:hover{
+    background-color: rgb(68 71 79);
+}
+.search_inputin{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: safe;
+
+
+}
+.search_inputin svg{
+    left: 50px;
+    width: var(--svg-size);
+    position: relative;
+}
+.search_inputin input{
+    width: 80%;
+    height: 42px;
+    font-size: 1em;
+    color: white;
+    font-style: italic;
+    padding-left: 5%;
+    border-radius: 2px;
+    transition-duration: 0.50s;
+    border: 2px solid rgb(47, 47, 47);
+    background-color: var(--background);
+
+}
+@media (max-width: 1087px) {
+    .search_inputin input{
+        padding-left: 20%;
+    }
+}
+.search_inputin input:focus{
+    width: 90%;
+}
+
+/* This is output of title */
+.title{
+    width: 100%;
+    height: fit-content;
+}
+.title h1{
+    padding-left: 3%;
+}
+/* The end output of title */
+
+
+/* This is uotput of songs itme and ist content */
+.outputitems{
+    width: 100%;
+    display: flex;
+    height: fit-content;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+.itemin_one{
+    width: 95%;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    height: fit-content;
+    margin-top: 20px;
+    cursor: pointer;
+    padding-bottom: 5px;
+    border-bottom: 2px double #21252d;
+}
+
+
+.element1 {
+    width: fit-content;
+    text-align: start;
+
+}
+.element1 img {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+    border-radius: 100px;
+
+}
+
+.element2 {
+    width: 80%;
+    font-size: 1.20em;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: red; */
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+#animation{
+    display: none;
+    float: right;
+    width: 30px;
+}
+
+.element3 {
+    width: 10%;
+    text-align: end;
+}
+.element3 strong{
+    font-size: 2.50em;
+    cursor: pointer;
+    padding-right: 5%;
+    
+}
+.empty{
+    top: 50%;
+    left: 30%;
+    right: 30%;
+    color:#252525;
+    position: fixed;
+    display: none;
+    font-family: sans-serif;
+}
+/* The end output of songs items */
+
+
+
+
+/* This is login section of styling css */
+.login_inner_code{
+    width: 80%;
+    top: 20%;
+    left: 10%;
+    height: 500px;
+    position: fixed;
+    border-radius: 5px;
+    display: none;
+    background-color:#21252d ;
+ 
+}
+
+
+.login_header{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.close_login{
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.close_login p{
+    cursor: pointer;
+    font-size: 2em;
+}
+
+
+
+.range_login{
+    width: 80%;
+    border-radius: 100px;
+    background-color: #374151;
+}
+.range{
+    width: 25%;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    /* animation: /; */
+    animation-duration: 0.50s;
+    background-color: #f44d27;
+}
+@keyframes rangeback {
+    0%{
+        width: 50%;
+    }
+    100% {
+        width: 25%;
+    }
+}
+.range_3d{
+    width: 95%;
+    height: 10px;
+    border-radius: 100px;
+    background-color:#f98167;
+
+}
+
+
+.gust{
+    width: 150px;
+    height: 150px;
+    border: 10px solid rgba(50, 50, 50, 0.722);
+    border-radius: 100%;
+
+}
+
+.form{
+    margin-top: 15px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.form div {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+
+
+}
+#name{
+    width: 50%;
+    height: 30px;
+    color: white;
+    font-size: 1em;
+    border-radius: 5px;
+    border: solid white 2px;
+    background-color: transparent;
+}
+
+.submit_reset {
+    width: 50%;
+    height: 32px;
+    font-size: 1em;
+    background-color: chocolate;
+    border: 2px solid chocolate;
+    color: white;
+    cursor: pointer;
+    border-radius: 1px;
+    /* background-color: transparent; */
+
+}
+
+@media (max-width: 724px) {
+    .form form{
+
+    }
+    #name{
+        width: 90%;
+    }
+    #submit_reset{
+        width: 91%;
+    }
+}
+
+
+.remove_login{
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+}
+.remove_login p{
+    cursor: pointer;
+    font-size: 2em;
+}
+
+
+
+.login_inner_code_second{
+    width:80%;
+    top: 20%;
+    left: 10%;
+    height: 500px;
+    position: fixed;
+    border-radius: 5px;
+    display: none;
+    background-color:#21252d ;
+    animation-duration: 0.50s;
+
+}
+#range_js{
+    animation: range;
+    animation-duration: 0.50s;
+}
+@keyframes range {
+    0%{
+        width: 25%;
+
+    }
+    100%{
+        width: 50%;
+    }
+}
+
+
+
+
+.login_inner_code_third{
+    width:80%;
+    top: 20%;
+    left: 10%;
+    height: 500px;
+    position: fixed;
+    border-radius: 5px;
+    display: none;
+    background-color:#21252d ;
+    animation-duration: 0.50s;
+}
+
+@keyframes rangeThird {
+    0%{
+        width: 50%;
+
+    }
+    100%{
+        width: 75%;
+    }
+}
+
+@keyframes rangeThirdback {
+    0%{
+        width: 75%;
+
+    }
+    100%{
+        width: 50%;
+    }
+}
+
+@keyframes rangefour {
+    0%{
+        width: 75%;
+
+    }
+    100%{
+        width: 100%;
+    }
+}
+@keyframes rangefourback {
+    0%{
+        width: 100%;
+
+    }
+    100%{
+        width: 75%;
+    }
+}
+
+.complete_container{
+    width: 100%;
+    height: 80px;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+}
+.complete_container button {
+    width: 50%;
+    height: 32px;
+    font-size: 1em;
+    background-color: chocolate;
+    border: 2px solid chocolate;
+    color: white;
+    cursor: pointer;
+    border-radius: 1px;
+    /* background-color: transparent; */
+}
+/* the ned of login section of styling css */
+
+/* This is more butto of styling page of css */
+
+      /* This is tool section of css */
+      #five{
+        width: 80px;
+        height: 300px;
+        display: flex;
+        position: fixed;
+        right: 2.50%;
+        bottom: 24%;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+        border-top: 2px solid rgb(36, 36, 36);
+        border-left: 2px solid rgb(36, 36, 36);
+        border-right: 2px solid rgb(36, 36, 36);
+        border-radius: 100px;
+        animation-name: five;
+        display: none;
+        animation-duration: 0.60s;
+        animation-iteration-count: calc(1);
+     }
+     @media (max-width: 800px) {
+        #five{
+            right: 3.60px;
+            bottom: 25%;
+        }
+     }
+     @keyframes five {
+        0%{
+            height: 0;
+        }
+        100%{
+            height: 300px;
+        }
+     }
+    #five div{
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1em;
+        color: white;
+        cursor: pointer;
+        border-radius: 100%;
+        background-color: chartreuse;
+
+    }
+
+    @keyframes fives {
+        0%{
+            width: 0;
+        }
+        100%{
+            
+            width: 300px;
+        }
+     }
+     .tool{
+        width: 62px;
+        height: 62px;
+        position: fixed;
+        bottom: 15%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        right: 3%;
+        color: white;
+        font-size: 2em;
+        border-radius: 100%;
+        cursor: pointer;
+        animation-name: tool-moving;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        background-color: chartreuse;
+    }
+    @keyframes tool-moving {
+        0%{
+           
+        }
+
+        100%{
+           
+           
+            
+        }
+        
+    }
+
+    .tool img{
+        width: 100%;
+        border-radius: 100%;
+
+    }
+    
+    #cut{
+        animation-name: cut;
+        animation-duration: 2s;
+        
+    }
+    @keyframes cut {
+        0%{
+            position: relative;
+            left: 100px;
+            opacity: 0;
+            transform: rotate(360deg);
+        }
+        100%{
+            position: relative;
+            left: 0px;
+            opacity: 1;
+        }
+    }
+    .tools{
+        width: 62px;
+        height: 62px;
+        position: fixed;
+        bottom: 15%;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        right: 3%;
+        color: white;
+        font-size: 2em;
+        border-radius: 100%;
+        cursor: pointer;
+        background-color: rgba(166, 238, 32, 0.38);
+    }
+    /* the end tool section of css */
+/* The end more button of styling page of css */
