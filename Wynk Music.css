@@ -195,7 +195,7 @@ body{
 }
 @keyframes AnimationHiro1 {
     0%{
-        transform: translate(1100px);
+        transform: translate(1500px);
     }
     100%{
         transform: translate(0);
